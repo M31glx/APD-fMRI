@@ -1,7 +1,7 @@
 # Altered Brain Network Topology in Children with Auditory Processing Disorder
 
 ## Introduction
-This study explores altered brain network organization in children with Auditory Processing Disorder (APD) using resting-state fMRI data and graph theory. Key findings include differences in brain hub architecture and functional connectivity between children with APD and healthy controls, particularly in regions related to auditory processing.
+This study explores brain network organization in children with Auditory Processing Disorder (APD) using resting-state fMRI data and graph theory approaches. Key findings include differences in brain hub architecture and functional connectivity between children with APD and healthy controls, particularly in regions related to auditory processing.
 
 ## Background
 **Problem Statement:** Auditory Processing Disorder (APD) leads to difficulties in understanding speech despite normal hearing. The origins of APD symptoms are debated, with limited knowledge on the role of altered brain network topology.

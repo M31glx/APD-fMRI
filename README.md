@@ -66,3 +66,21 @@ I'd like to thank [Eisdel Moore centre](https://www.emcentre.ac.nz/) for funding
 
 #### Defining connections
 
+## Processing the data (Application of network algorithms)
+
+### Global and local topology evaluation
+
+### Backbone consistency tests (Hub model)
+
+### Connection consistency test
+
+## Statistics 
+
+### Multivariate tests
+
+### Correlation tests
+
+
+
+
+

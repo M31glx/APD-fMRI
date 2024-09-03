@@ -46,3 +46,9 @@ I'd like to thank [Eisdel Moore centre](https://www.emcentre.ac.nz/) for funding
 
 # Data science behind this study
 
+## Data Organization steps
+
+### Data conversion
+
+### Data restructuring
+

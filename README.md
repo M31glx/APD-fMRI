@@ -44,8 +44,6 @@ This study contributes to the understanding of brain network alterations in APD,
 ## Code and Data
 **Repository Link:** [GitHub Repository Link](#)
 
-**Data Availability:** Provide details on the availability of data, if any, or mention data restrictions.
-
 ## Acknowledgments
-Acknowledge any funding sources, collaborators, and institutions involved in the study.
+I'd like to thank [Eisdel Moore centre](https://www.emcentre.ac.nz/) for funding us and all those who helped us to complete this project. 
 

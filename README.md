@@ -10,11 +10,11 @@ This study explores brain network organization in children with Auditory Process
 
 ## Methods
 
-### Participants
-- 57 children aged 8-14, 28 with APD and 29 healthy controls.
+### Population for collecting multimodal data
+- 66 children (57 included)  aged 8-14 years old (28 with diagnosis of APD and 29 healthy controls).
 
-### Data Collection
-- Resting-state functional MRI (rsfMRI) data was collected using a multi-echo sequence
+### Data type
+- functional MRI (rsfMRI) data using a multi-echo multiband sequences
 
 ### Analysis Techniques
 - Complex network analysis using graph theory, focusing on global and nodal network properties, and brain hub architecture.
@@ -41,9 +41,8 @@ This study contributes to the understanding of brain network alterations in APD,
 
 **Citation:** Alvand, A., et al. (2022). Altered brain network topology in children with auditory processing disorder: A resting-state multi-echo fMRI study. *NeuroImage: Clinical, 35*, 103139.
 
-## Code and Data
-**Repository Link:** [GitHub Repository Link](#)
-
 ## Acknowledgments
 I'd like to thank [Eisdel Moore centre](https://www.emcentre.ac.nz/) for funding us and all those who helped us to complete this project. 
+
+# Data science behind this study
 

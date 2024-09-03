@@ -14,7 +14,7 @@ This study explores altered brain network organization in children with Auditory
 - 57 children aged 8-14, 28 with APD and 29 healthy controls.
 
 ### Data Collection
-- Resting-state functional MRI (rsfMRI) data was collected using a multi-echo sequence and analyzed with graph theory to assess brain network properties.
+- Resting-state functional MRI (rsfMRI) data was collected using a multi-echo sequence
 
 ### Analysis Techniques
 - Complex network analysis using graph theory, focusing on global and nodal network properties, and brain hub architecture.

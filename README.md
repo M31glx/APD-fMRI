@@ -52,11 +52,17 @@ I'd like to thank [Eisdel Moore centre](https://www.emcentre.ac.nz/) for funding
 
 ### Data restructuring
 
-### Data quality assessment
+## Data quality assessment
 
 ### Data initial preprocessing (minimal cleaning)
 
-### selection of optimal denoising pipelines (benchmarking strategies)
+### Selection of optimal denoising pipelines (benchmarking strategies)
 
+## Modeling the data 
 
+### Constructing network model
+
+#### Defining data points
+
+#### Defining connections
 

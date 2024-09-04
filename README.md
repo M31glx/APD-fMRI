@@ -21,18 +21,18 @@ Figure 1: The pipeline used in this project for analyzing the imaging data.
 </p>
 
 ### Population for collecting multimodal data
-- 66 children (57 included)  aged 8-14 years old (28 with diagnosis of APD and 29 healthy controls).
+- 66 children (57 included) aged 8-14 years old (28 with diagnosis of APD and 29 healthy controls).
 
 ### Data type
-- functional MRI (rsfMRI) data using a multi-echo multiband sequences
+- functional MRI (rsfMRI) data aquired by multi-echo multiband imaging sequences
 
 ### Analysis Techniques
-- Complex network analysis using graph theory, focusing on global and nodal network properties, and brain hub architecture.
+- Complex network analysis using graph theory, focusing on global and nodal network properties, and brain hub architecture
 
 ## Results
 
 ### Global Network Properties
-- Both APD and control groups showed similar global network properties, but differences emerged in hub architecture.
+- Both APD and control groups showed similar global network properties, but differences emerged in hub architecture
 
 <p align="center">
   <img src="img/2.jpg" alt="Image 1" width="500"/>
@@ -41,7 +41,7 @@ Figure 1: The pipeline used in this project for analyzing the imaging data.
 Figure 2: Similar brain hub architecture and <a href="https://en.wikipedia.org/wiki/Large-scale_brain_network">intrinsic network model</a> in both APD and HC (Left) as shown by their global network metrics (right).
 
 ### Key Findings
-- Decreased participation coefficient in auditory cortical regions (<a href="https://www.sciencedirect.com/topics/neuroscience/superior-temporal-gyrus#:~:text=The%20superior%20temporal%20gyrus%20is,short%2Dterm%20auditory%20sensory%20memory.">bilateral superior temporal gyrus </a>) in children with APD, suggesting altered functional connectivity in specific brain networks (Figure 3: Left).
+- Decreased participation coefficient in auditory cortical regions (<a href="https://www.sciencedirect.com/topics/neuroscience/superior-temporal-gyrus#:~:text=The%20superior%20temporal%20gyrus%20is,short%2Dterm%20auditory%20sensory%20memory.">bilateral superior temporal gyrus</a>) in children with APD, suggesting altered functional connectivity in specific brain networks (Figure 3: Left).
 - Positive correlation between left  <a href="https://www.sciencedirect.com/topics/neuroscience/parahippocampal-gyrus">parahippocampal gyrus </a> connectivity and auditory perception tasks in children with APD (Figure 3: Right) .
 
 <p align="center">

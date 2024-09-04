@@ -38,7 +38,7 @@ Figure 1: The pipeline used in this project for analyzing the imaging data.
   <img src="img/2.jpg" alt="Image 1" width="500"/>
   <img src="img/3.jpg" alt="Image 2" width="300"/>
 </p>
-Figure 2: Similar brain hub architecture and [intrinsic network model](https://en.wikipedia.org/wiki/Large-scale_brain_network) in both APD and HC (Left) as shown by their global network metrics (right).
+Figure 2: Similar brain hub architecture and <a href="https://en.wikipedia.org/wiki/Large-scale_brain_network">intrinsic network model</a> in both APD and HC (Left) as shown by their global network metrics (right).
 
 
 ### Key Findings

@@ -10,7 +10,7 @@ This study explores brain network organization in children with Auditory Process
 
 ## Methods
 
-![Alt text](img/Figure2.tif)
+![Alt text](img/1.jpg)
 ### Population for collecting multimodal data
 - 66 children (57 included)  aged 8-14 years old (28 with diagnosis of APD and 29 healthy controls).
 

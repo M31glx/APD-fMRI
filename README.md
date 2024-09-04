@@ -64,7 +64,7 @@ This study contributes to the understanding of brain network alterations in APD,
 **Citation:** Alvand, A., et al. (2022). Altered brain network topology in children with auditory processing disorder: A resting-state multi-echo fMRI study. *NeuroImage: Clinical, 35*, 103139.
 
 ## Funding
-This study was conducted with support of [Eisdell Moore centre](https://www.emcentre.ac.nz/).
+This study was funded by [Eisdell Moore Centre](https://www.emcentre.ac.nz/) and Faculty of Science's Research fund from [the University of Auckland](https://www.auckland.ac.nz/en.html).
 
 # Data science behind this study
 

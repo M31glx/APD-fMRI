@@ -40,10 +40,14 @@ Figure 1: The pipeline used in this project for analyzing the imaging data.
 </p>
 Figure 2: Similar brain hub architecture and <a href="https://en.wikipedia.org/wiki/Large-scale_brain_network">intrinsic network model</a> in both APD and HC (Left) as shown by their global network metrics (right).
 
-
 ### Key Findings
 - Decreased participation coefficient in auditory cortical regions in children with APD, suggesting altered functional connectivity in specific brain networks.
 - Positive correlation between left parahippocampal gyrus connectivity and auditory perception tasks in children with APD.
+
+<p align="center">
+  <img src="img/5.jpg" alt="Image 1" width="500"/>
+  <img src="img/4.jpg" alt="Image 2" width="300"/>
+</p>
 
 ## Discussion
 The findings suggest that children with APD have distinct alterations in brain network topology, particularly in regions associated with auditory processing. These results provide new insights into the neural mechanisms underlying APD and highlight the potential for using advanced neuroimaging and network science approaches to further our understanding of auditory processing disorders.

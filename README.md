@@ -17,7 +17,7 @@ This study explores brain network organization in children with Auditory Process
 </p>
 
 <p align="center">
-*Figure 1: The pipeline used in this project for analyzing the imaging data.*
+Figure 1: The pipeline used in this project for analyzing the imaging data.
 </p>
 
 ### Population for collecting multimodal data

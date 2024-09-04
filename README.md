@@ -96,11 +96,11 @@ This study was funded by [Eisdell Moore Centre](https://www.emcentre.ac.nz/) and
 
 ### Constructing network model
 
-#### Defining data points
+- Defining data points
 
-#### Defining connections
+- Defining connections
 
-## Processing the data (Application of network algorithms)
+## Processing the data (Application of graph theory algorithms)
 
 ### Global and local topology evaluation
 
@@ -108,7 +108,7 @@ This study was funded by [Eisdell Moore Centre](https://www.emcentre.ac.nz/) and
 
 ### Connection consistency test
 
-## Statistics 
+## Statistical evaluation
 
 ### Multivariate tests
 

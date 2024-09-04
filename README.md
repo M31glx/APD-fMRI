@@ -20,11 +20,11 @@ This study explores brain network organization in children with Auditory Process
 Figure 1: The pipeline used in this project for analyzing the imaging data.
 </p>
 
-### Population for collecting multimodal data
+### Population for collecting multi-modal data
 - 66 children (57 included) aged 8-14 years old (28 with diagnosis of APD and 29 healthy controls).
 
 ### Data type
-- functional MRI (rsfMRI) data aquired by multi-echo multiband imaging sequences
+- functional MRI (rs-fMRI) data acquired by multi-echo multi-band imaging sequences
 
 ### Analysis Techniques
 - Complex network analysis using graph theory, focusing on global and nodal network properties, and brain hub architecture
@@ -59,12 +59,12 @@ The findings suggest that children with APD have distinct alterations in brain n
 This study contributes to the understanding of brain network alterations in APD, with potential implications for developing targeted interventions.
 
 ## Publication and Citation
-**Full Paper:** [Link to the paper](https://www.sciencedirect.com/science/article/pii/S2213158222002042)
+**Read the article:** [here](https://www.sciencedirect.com/science/article/pii/S2213158222002042)
 
 **Citation:** Alvand, A., et al. (2022). Altered brain network topology in children with auditory processing disorder: A resting-state multi-echo fMRI study. *NeuroImage: Clinical, 35*, 103139.
 
 ## Funding
-This study was conducted with support of [Eisdel Moore centre](https://www.emcentre.ac.nz/).
+This study was conducted with support of [Eisdell Moore centre](https://www.emcentre.ac.nz/).
 
 # Data science behind this study
 
@@ -76,9 +76,9 @@ This study was conducted with support of [Eisdel Moore centre](https://www.emcen
 
 ## Data quality assessment
 
-### Data initial preprocessing (minimal cleaning)
+### Data initial pre-processing (minimal cleaning)
 
-### Selection of optimal denoising pipelines (benchmarking strategies)
+### Selection of optimal de-noising pipelines (benchmarking strategies)
 
 ## Modeling the data 
 

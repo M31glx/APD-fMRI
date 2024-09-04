@@ -35,7 +35,7 @@ This study explores brain network organization in children with Auditory Process
 - Both APD and control groups showed similar global network properties, but differences emerged in hub architecture.
 
 <p align="center">
-  <img src="img/2.jpg" alt="Image 1" width="300"/>
+  <img src="img/2.jpg" alt="Image 1" width="600"/>
   <img src="img/3.jpg" alt="Image 2" width="300"/>
 </p>
 

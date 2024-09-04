@@ -46,7 +46,7 @@ Figure 2: Similar brain hub architecture and <a href="https://en.wikipedia.org/w
 
 <p align="center">
   <img src="img/5.jpg" alt="Image 1" width="500"/>
-  <img src="img/4.jpg" alt="Image 2" width="300"/>
+  <img src="img/4.jpg" alt="Image 2" width="500"/>
 </p>
 
 ## Discussion

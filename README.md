@@ -1,4 +1,4 @@
-# Altered Brain Network Topology in Children with Auditory Processing Disorder
+# Project: Functional MRI study of children diagnosed with APD
 
 ## Introduction
 This study explores brain network organization in children with Auditory Processing Disorder (APD) using resting-state fMRI data and graph theory approaches. Key findings include differences in brain hub architecture and functional connectivity between children with APD and healthy controls, particularly in regions related to auditory processing.
@@ -73,12 +73,12 @@ This study contributes to the understanding of brain network alterations in APD,
 ## Publication and Citation
 **Read the article:** [here](https://www.sciencedirect.com/science/article/pii/S2213158222002042)
 
-**Citation:** Alvand, A., et al. (2022). Altered brain network topology in children with auditory processing disorder: A resting-state multi-echo fMRI study. *NeuroImage: Clinical, 35*, 103139.
+**Citation:** Alvand et al., (2022). Altered brain network topology in children with auditory processing disorder: A resting-state multi-echo fMRI study. *NeuroImage: Clinical, 35*, 103139.
 
 ## Funding
 This study was funded by [Eisdell Moore Centre](https://www.emcentre.ac.nz/) and Faculty of Science's Research fund from [the University of Auckland](https://www.auckland.ac.nz/en.html).
 
-# Data science behind this study
+# Data science behind the study
 
 ## Data Organization steps
 

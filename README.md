@@ -10,6 +10,15 @@ This study explores brain network organization in children with Auditory Process
 
 ## Methods
 
+### Population for collecting multi-modal data
+- 66 children (57 included) aged 8-14 years old (28 with diagnosis of APD and 29 healthy controls).
+
+### Data type
+- functional MRI (rs-fMRI) data acquired by multi-echo multi-band imaging sequences
+
+### Analysis Techniques
+- Complex network analysis using graph theory, focusing on global and nodal network properties, and brain hub architecture
+
 <!-- ![Alt text](img/1.jpg) -->
 
 <p align="center">
@@ -19,15 +28,6 @@ This study explores brain network organization in children with Auditory Process
 <p align="center">
 Figure 1: The pipeline used in this project for analyzing the imaging data.
 </p>
-
-### Population for collecting multi-modal data
-- 66 children (57 included) aged 8-14 years old (28 with diagnosis of APD and 29 healthy controls).
-
-### Data type
-- functional MRI (rs-fMRI) data acquired by multi-echo multi-band imaging sequences
-
-### Analysis Techniques
-- Complex network analysis using graph theory, focusing on global and nodal network properties, and brain hub architecture
 
 ## Results
 

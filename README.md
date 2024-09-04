@@ -45,8 +45,8 @@ Figure 2: Similar brain hub architecture and <a href="https://en.wikipedia.org/w
 - Positive correlation between left parahippocampal gyrus connectivity and auditory perception tasks in children with APD.
 
 <p align="center">
-  <img src="img/5.jpg" alt="Image 1" width="500"/>
-  <img src="img/4.jpg" alt="Image 2" width="500"/>
+  <img src="img/5.jpg" alt="Image 1" width="300"/>
+  <img src="img/4.jpg" alt="Image 2" width="300"/>
 </p>
 
 ## Discussion

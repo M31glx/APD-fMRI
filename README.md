@@ -37,11 +37,37 @@ Figure 1: The pipeline used in this project for analyzing the imaging data.
 
 ### Global Network Properties
 - Both APD and control groups showed similar global network properties, but differences emerged in hub architecture
-
+<!--
 <p align="center">
-  <img src="img/2.jpg" alt="Image 1" style="max-width:100%; height:auto;"/>
-  <img src="img/3.jpg" alt="Image 2" style="max-width:100%; height:auto;"/>
+  <img src="img/2.jpg" alt="Image 1" width="500"/>
+  <img src="img/3.jpg" alt="Image 2" width="300"/>
 </p>
+-->
+
+<div class="image-container">
+    <img src="img/2.jpg" alt="Image 1">
+    <img src="img/3.jpg" alt="Image 2">
+</div>
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.image-container img {
+    max-width: 45%; /* Adjust size as needed */
+    height: auto;
+    margin: 5px;
+}
+
+@media (max-width: 768px) {
+    .image-container img {
+        max-width: 100%; /* Stacks the images on small screens */
+    }
+}
+
+
 Figure 2: Similar brain hub architecture and <a href="https://en.wikipedia.org/wiki/Large-scale_brain_network">intrinsic network model</a> in both APD and HC (Left) as shown by their global network metrics (right).
 
 

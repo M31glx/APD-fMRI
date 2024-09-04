@@ -41,8 +41,8 @@ Figure 1: The pipeline used in this project for analyzing the imaging data.
 Figure 2: Similar brain hub architecture and <a href="https://en.wikipedia.org/wiki/Large-scale_brain_network">intrinsic network model</a> in both APD and HC (Left) as shown by their global network metrics (right).
 
 ### Key Findings
-- Decreased participation coefficient in auditory cortical regions in children with APD, suggesting altered functional connectivity in specific brain networks (Figure 3: Left).
-- Positive correlation between left parahippocampal gyrus connectivity and auditory perception tasks in children with APD (Figure 3: Right) .
+- Decreased participation coefficient in auditory cortical regions (<a href="https://www.sciencedirect.com/topics/neuroscience/superior-temporal-gyrus#:~:text=The%20superior%20temporal%20gyrus%20is,short%2Dterm%20auditory%20sensory%20memory.">bilateral superior temporal gyrus </a>) in children with APD, suggesting altered functional connectivity in specific brain networks (Figure 3: Left).
+- Positive correlation between left  <a href="https://www.sciencedirect.com/topics/neuroscience/parahippocampal-gyrus">parahippocampal gyrus </a> connectivity and auditory perception tasks in children with APD (Figure 3: Right) .
 
 <p align="center">
   <img src="img/5.jpg" alt="Image 1" width="400"/>
@@ -62,8 +62,8 @@ This study contributes to the understanding of brain network alterations in APD,
 
 **Citation:** Alvand, A., et al. (2022). Altered brain network topology in children with auditory processing disorder: A resting-state multi-echo fMRI study. *NeuroImage: Clinical, 35*, 103139.
 
-## Acknowledgments
-I'd like to thank [Eisdel Moore centre](https://www.emcentre.ac.nz/) for funding us and all those who helped us to complete this project. 
+## Funding
+This study was conducted with support of [Eisdel Moore centre](https://www.emcentre.ac.nz/).
 
 # Data science behind this study
 

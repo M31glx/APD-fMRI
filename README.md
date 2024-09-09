@@ -94,7 +94,7 @@ Raw MRI images ([DICOM](https://www.dicomstandard.org/about) data) were first re
 
 Figure 4: Transforming DICOM images (Left) to NIFTI format (4D data point) according to BIDS structure (Right)
 
-### 2. Data quality assessment
+### 2. Data Quality (QC)
 In order to assess the quality of each data for pre-processing, first each NIFTI data was visualized and evaluated against their quality control (QC) parameters such as FD (a measurement of how much the head moves from one frame to the next), DIVARS (derivatives of FD), etc. as well as their [carpet plot](https://www.nature.com/articles/s41598-021-86402-z#:~:text=A%20%E2%80%9Ccarpet%20plot%E2%80%9D%20is%20a,of%20neuronal%20and%20physiological%20activity.) ( 2-dimensional plot of scaled fMRI voxel intensity values).
 
 This pipeline is written in Bash and utilizes the [MRIQC](https://github.com/nipreps/mriqc/tree/master) (Python tool) for data quality assessment.
@@ -103,12 +103,21 @@ This pipeline is written in Bash and utilizes the [MRIQC](https://github.com/nip
 <!-- for compatibility with screen sizes -->
 <img src="img/9.png" alt="Description" style="max-width:100%; height:auto;"> 
 </p>
-Figure 4: Visualized NIFTI data according to its quality measures
+Figure 5: Visualized NIFTI data according to its quality measures
 
 
-### Data initial pre-processing (minimal cleaning)
+### 3. Computer vision: Image pre-processing
 
-### Selection of optimal de-noising pipelines (benchmarking strategies)
+After discarding data points that did not meet the QC requirement, the remained data were undergone sequences of cleaning procedure, for example, Image transformations, Head motion correction, Spatial Normalization and Spatial Smoothing. This procedure utilizes [fMRIPrep](https://fmriprep.org/en/stable/), neuroimaging standard pipeline for minimal image cleaning (Figure 6). 
+
+<p align="center">
+<!-- for compatibility with screen sizes -->
+<img src="img/10.png" alt="Description" style="max-width:100%; height:auto;"> 
+</p>
+Figure 6: Image pre-processing steps
+
+
+### 4. Selection of optimal de-noising pipelines (benchmarking strategies)
 
 ## Modeling the data 
 

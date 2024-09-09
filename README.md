@@ -79,14 +79,20 @@ This study contributes to the understanding of brain network alterations in APD,
 This study was funded by [Eisdell Moore Centre](https://www.emcentre.ac.nz/) and Faculty of Science's Research fund from [the University of Auckland](https://www.auckland.ac.nz/en.html).
 
 # Data science behind the study
-In this project, range of different approaches were used to treat the data such as formatting 4D imaging dataset (DICOM --> NIFTI), re-arranging data structure into brain Imaging Data structure (BIDS), data quality inspection for evaluating noisy data points (MRIQC), evaluation of de-noising pipelines, modeling data based on the theory of graph as well as statistical analysis
+In this project, range of different approaches were used to treat the data such as formatting 4D imaging dataset (DICOM --> NIFTI), re-arranging data structure into brain Imaging Data structure (BIDS), quality inspection for evaluating spurious data (MRIQC), evaluation of de-noising pipelines, modeling data based on the theory of graph as well as statistical analysis
 
 ## Data Organization steps
 
-### Data conversion
+### 1. Data conversion and restructuring
 
-### Data restructuring
+Raw MRI data (DICOM images) were first reformatted to readable brain imaging data (NIFTI) using dcm2niix and then re-structured into BIDS data structure using niix2bids (Python). 
 
+<p align="center">
+  <img src="img/6.png" alt="Image 1" width="500"/>
+  <img src="img/7.jpg" alt="Image 2" width="300"/>
+</p>
+
+Figure 4: Depiction of 
 ## Data quality assessment
 
 ### Data initial pre-processing (minimal cleaning)

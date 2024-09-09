@@ -116,7 +116,11 @@ After discarding data points that did not meet the QC requirement, the remained 
 <!-- for compatibility with screen sizes -->
 <img src="img/10.png" alt="Description" style="max-width:100%; height:auto;"> 
 </p>
+
+<p align="center">
 Figure 6: Some of the image pre-processing steps
+</p>
+
 
 
 ### 2. Selection of optimal de-noising pipelines (benchmarking strategies)
@@ -128,7 +132,10 @@ After each data was minimally processed, each data point were gone through furth
 <img src="img/11.jpg" alt="Description" width="500" height="600"> 
 </p>
 
+<p align="center">
 Figure 7: Benchmark of de-noising pipelines 
+</p>
+
 
 ## Modeling the data 
 

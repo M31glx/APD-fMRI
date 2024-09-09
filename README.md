@@ -103,7 +103,11 @@ This pipeline is written in Bash and utilizes the [MRIQC](https://github.com/nip
 <!-- for compatibility with screen sizes -->
 <img src="img/9.png" alt="Description" style="max-width:100%; height:auto;"> 
 </p>
+
+<p align="center">
 Figure 5: Visualized NIFTI data according to its quality measures
+</p>
+
 
 
 ## Computer vision

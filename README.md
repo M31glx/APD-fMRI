@@ -89,7 +89,7 @@ Raw MRI data (DICOM images) were first reformatted to readable brain imaging dat
 
 <p align="center">
   <img src="img/8.jpg" alt="Image 1" width="300"/>
-  <img src="img/6.png" alt="Image 2" width="300"/>
+  <img src="img/6.png" alt="Image 2" width="500"/>
 </p>
 
 Figure 4: Transforming DICOM images (Left) to NIFTI format (4D data point) according to BIDS structure (Right)

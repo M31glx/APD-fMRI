@@ -125,7 +125,7 @@ After each data was minimally processed, each data point were gone through furth
 
 <p align="center">
 <!-- for compatibility with screen sizes -->
-<img src="img/11.jpg" alt="Description" style="width:auto; height:auto;"> 
+<img src="img/11.jpg" alt="Description" style="width:400; height:600;"> 
 </p>
 Figure 7: Benchmark of de-noising strategies 
 

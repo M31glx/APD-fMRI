@@ -88,7 +88,7 @@ In this project, range of different approaches were used to treat the data such 
 Raw MRI data (DICOM images) were first reformatted to readable brain imaging data (NIFTI) using dcm2niix and then re-structured into BIDS data structure using niix2bids (Python). 
 
 <p align="center">
-  <img src="img/8.jpg" alt="Image 1" width="500"/>
+  <img src="img/8.jpg" alt="Image 1" width="300"/>
   <img src="img/6.png" alt="Image 2" width="300"/>
 </p>
 

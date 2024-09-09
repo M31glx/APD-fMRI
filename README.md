@@ -85,7 +85,7 @@ In this project, range of different approaches were used to treat the data such 
 
 ### 1. Data conversion and restructuring
 
-Raw MRI images (DICOM data) were first reformatted to readable brain imaging data (NIFTI) using [dcm2niix](https://github.com/rordenlab/dcm2niix) and then re-structured into BIDS data structure using [niix2bids (Python)](https://github.com/benoitberanger/niix2bids). 
+Raw MRI images ([DICOM](https://www.dicomstandard.org/about) data) were first reformatted to readable brain imaging data (NIFTI) using [dcm2niix](https://github.com/rordenlab/dcm2niix) and then re-structured into BIDS data structure using [niix2bids (Python)](https://github.com/benoitberanger/niix2bids). 
 
 <p align="center">
   <img src="img/8.jpg" alt="Image 1" width="300"/>
@@ -94,7 +94,17 @@ Raw MRI images (DICOM data) were first reformatted to readable brain imaging dat
 
 Figure 4: Transforming DICOM images (Left) to NIFTI format (4D data point) according to BIDS structure (Right)
 
-## 2. Data quality assessment
+### 2. Data quality assessment
+In order to assess the quality of each data for pre-processing, first each NIFTI data were visualized and evaluated against their motion parameters such as FD (a measurement of how much the head moves from one frame to the next), DIVARS (derivatives of FD) and their [carpet plot](https://www.nature.com/articles/s41598-021-86402-z#:~:text=A%20%E2%80%9Ccarpet%20plot%E2%80%9D%20is%20a,of%20neuronal%20and%20physiological%20activity.) ( 2-dimensional plot of scaled fMRI voxel intensity values).
+
+The pipeline is written in Bash and utilizes the [MRIQC](https://github.com/nipreps/mriqc/tree/master) (Python tool) for data quality assessment.
+
+<p align="center">
+<!-- for compatibility with screen sizes -->
+<img src="img/9.png" alt="Description" style="max-width:100%; height:auto;"> 
+</p>
+Figure 4: Visualized NIFTI data according to its quality measures
+
 
 ### Data initial pre-processing (minimal cleaning)
 

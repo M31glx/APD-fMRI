@@ -127,9 +127,9 @@ Figure 6: Some of the image pre-processing steps
 
 
 
-### 2. Selection of optimal de-noising pipelines (benchmarking strategies)
+### 2. Selection of optimal de-noising pipelines
 
-After each data was minimally processed, each data point were gone through further cleaning procedure to remove motion and confound signals from fMRI signal ([BOLD signal](https://radiopaedia.org/articles/bold-imaging)). For this, multiple existing de-noising pipelines were tested against efficiency and efficacy indices for accuracy performance. For instance, Figure 7 highlights the highest score of ICA-AROMA+Phs+4GSR (High QC-FC, Low QC-FC dependence) among the rest of popular de-noising pipelines for the project's fMRI dataset.
+After each data was minimally processed, each data point were gone through further cleaning procedure to remove motion and confound signals from fMRI signal ([BOLD signal](https://radiopaedia.org/articles/bold-imaging)). For this, multiple existing de-noising pipelines were tested against efficiency and efficacy indices for accuracy performance. For instance, Figure 7 highlights the highest score of ICA-AROMA+8Phs+4GSR (High QC-FC, Low QC-FC dependence) among the rest of popular de-noising pipelines for the project's fMRI dataset.
 
 <p align="center">
 <!-- for compatibility with screen sizes -->
@@ -137,7 +137,7 @@ After each data was minimally processed, each data point were gone through furth
 </p>
 
 <p align="center">
-Figure 7: Benchmark of de-noising pipelines 
+Figure 7: Evaluating the accuracy of de-noising pipelines 
 </p>
 
 

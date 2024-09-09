@@ -106,7 +106,9 @@ This pipeline is written in Bash and utilizes the [MRIQC](https://github.com/nip
 Figure 5: Visualized NIFTI data according to its quality measures
 
 
-### 3. Computer vision: Image pre-processing
+## Computer vision
+
+### 1. Image pre-processing
 
 After discarding data points that did not meet the QC requirement, the remained data were undergone sequences of cleaning procedure, for example, Image transformations, Head motion correction, Spatial Normalization and Spatial Smoothing. This procedure utilizes [fMRIPrep](https://fmriprep.org/en/stable/), neuroimaging standard pipeline for minimal image cleaning (Figure 6). 
 
@@ -114,10 +116,18 @@ After discarding data points that did not meet the QC requirement, the remained 
 <!-- for compatibility with screen sizes -->
 <img src="img/10.png" alt="Description" style="max-width:100%; height:auto;"> 
 </p>
-Figure 6: Image pre-processing steps
+Figure 6: Some of the image pre-processing steps
 
 
-### 4. Selection of optimal de-noising pipelines (benchmarking strategies)
+### 2. Selection of optimal de-noising pipelines (benchmarking strategies)
+
+After each data was minimally processed, each data point were gone through further cleaning procedure to remove motion and confound signals from fMRI signal ([BOLD signal](https://radiopaedia.org/articles/bold-imaging)). For this, multiple existing de-noising pipelines were tested against efficiency and efficacy indices for accuracy performance. For instance, Figure 7 highlights the highest score of ICA-AROMA+Phs+4GSR (High QC-FC, Low QC-FC dependence) among the rest of popular de-noising pipelines for the project's fMRI dataset.
+
+<p align="center">
+<!-- for compatibility with screen sizes -->
+<img src="img/11.jpg" alt="Description" style="max-width:100%; height:auto;"> 
+</p>
+Figure 7: Benchmark of de-noising strategies 
 
 ## Modeling the data 
 

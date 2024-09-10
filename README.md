@@ -182,6 +182,11 @@ Figure 7: Evaluating the accuracy of de-noising pipelines
 
 - Defining connections
 
+<video width="600" controls>
+  <source src="img/Network.avi" type="video/avi">
+  Your browser does not support the video tag.
+</video>
+
 ## Processing the data (Application of graph theory algorithms)
 
 ### Global and local topology evaluation

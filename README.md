@@ -144,7 +144,7 @@ Figure 5: Visualized NIFTI data according to its quality measures
 
 ### 2. Image pre-processing
 
-After discarding data points that did not meet the QC requirement, the remained data were undergone sequences of cleaning procedure, for example, Image transformations, Head motion correction, Spatial Normalization and Spatial Smoothing. This procedure utilizes [fMRIPrep](https://fmriprep.org/en/stable/), neuroimaging standard pipeline for minimal image cleaning (Figure 6). 
+After discarding data points that did not meet the QC requirement, the remained data were undergone sequences of cleaning procedure, for example, image transformations, head motion correction, spatial normalization and spatial smoothing. This procedure utilizes [fMRIPrep](https://fmriprep.org/en/stable/), neuroimaging standard pipeline for minimal image cleaning (Figure 6). 
 
 <p align="center">
 <!-- for compatibility with screen sizes -->
@@ -152,7 +152,7 @@ After discarding data points that did not meet the QC requirement, the remained 
 </p>
 
 <p align="center">
-Figure 6: Some of the image pre-processing steps
+Figure 6: Some of the fMRI image pre-processing steps
 </p>
 
 

@@ -1,0 +1,9 @@
+Version 1.1 Released 20111028
+- Add a Interface to REST (http://restfmri.net/forum/), can be called from the Slice Viewer function in REST to draw a vloume-surface mapping graph. (function BrainNet_MapVolumet to draw volume-surface mapping graph by script). 
+- Add a new graph layout called 'Medium view', which would show the lateral and medium side of hemispheres.
+- Integrat SPM NIFTI file lodaing functions, SPM NIFTI or Analyzed files can be supported.
+- Add several new colormap for volume-surface mapping function, and algorithm of colormap is adjusted
+- Adjust the position of nodal label.
+- Add a smoothed ICBM152 surface.
+- Adjust the Tab order in Option panel.
+- Change function name with uniformed prefix 'BrainNet_' to avoid confusion

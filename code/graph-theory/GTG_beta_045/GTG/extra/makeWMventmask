@@ -1,0 +1,187 @@
+#!/bin/bash
+
+HELP_OUT="Usage: $(basename "$0") -struct <structural_filename> [-warp <struct2stand_warp_filename> -invwarp <stand2struct_warp_filename> -MNIwm <MNIspace_wm_filename> -MNIvent <MNIspace_vent_filename> -wm <wm_mask_filename> -vent <vent_mask_filename>]
+
+Compute white matter and ventricular masks
+
+Compulsory arguments:
+    -struct  : structural filename (must be skull-stripped if white matter or ventricular masks are to be computed)
+
+Optional arguments:
+    -out     : base outname (if not specified, name of strucutural scan will be used)
+    -MNIwm   : atlas-based white matter mask in standard space (warped to structural space and used to remove voxels that have been incorrectly identified as white matter)
+    -MNIvent : atlas-based ventricular mask in standard space (warped to structural space and used to remove voxels that have been incorrectly identified as ventricle)
+    -warp    : structural to standard space (FNIRT) warp filename
+       OR
+    -invwarp : standard to structural space (FNIRT) warp filename
+    -wm      : participant-specific white matter mask in structural space (if not input, white matter mask will be computed from the structural file)
+    -vent    : participant-specific ventricular mask in structural space (if not input, ventricular mask will be computed from the structural file)
+    -noclean : do not clean up intermediate files
+    -h       : show this help text
+
+Version: JMS 02/29/16"
+
+# Set defaults
+extract_WM=YES
+extract_VENT=YES
+mask_WM=NO
+mask_VENT=NO
+invert_WARP=YES
+clean=YES
+
+# Show help text if no arguments passed
+if [ -z "$1" ]
+then
+    echo "$HELP_OUT"
+    exit 1
+fi
+
+# Parse input arguments
+while [[ $# > 0 ]]
+do
+    key="$1"
+
+    case $key in
+	-struct)
+	    STRUCT="$2"
+	    STRUCT=${STRUCT%.gz}
+	    STRUCT=${STRUCT%.nii}
+	    STRUCT=${STRUCT%.img}
+	    STRUCT=${STRUCT%.hdr}
+	    out_basename=${STRUCT}
+	    shift
+	    ;;
+	-out)
+	    out_basename="$2"
+	    shift
+	    ;;
+	-MNIwm)
+	    MNI_WM_orig="$2"
+	    MNI_WM_orig=${MNI_WM_orig%.gz}
+	    MNI_WM_orig=${MNI_WM_orig%.nii}
+	    MNI_WM_orig=${MNI_WM_orig%.img}
+	    MNI_WM_orig=${MNI_WM_orig%.hdr}
+	    mask_WM=YES
+	    shift
+	    ;;
+	-MNIvent)
+	    MNI_VENT_orig="$2"
+	    MNI_VENT_orig=${MNI_VENT_orig%.gz}
+	    MNI_VENT_orig=${MNI_VENT_orig%.nii}
+	    MNI_VENT_orig=${MNI_VENT_orig%.img}
+	    MNI_VENT_orig=${MNI_VENT_orig%.hdr}
+	    mask_VENT=YES
+	    shift
+	    ;;
+	-warp)
+	    struct2stand_WARP="$2"
+	    struct2stand_WARP=${struct2stand_WARP%.gz}
+	    struct2stand_WARP=${struct2stand_WARP%.nii}
+	    struct2stand_WARP=${struct2stand_WARP%.img}
+	    struct2stand_WARP=${struct2stand_WARP%.hdr}
+	    invert_WARP=YES
+	    shift
+	    ;;
+	-invwarp)
+	    stand2struct_WARP="$2"
+	    stand2struct_WARP=${stand2struct_WARP%.gz}
+	    stand2struct_WARP=${stand2struct_WARP%.nii}
+	    stand2struct_WARP=${stand2struct_WARP%.img}
+	    stand2struct_WARP=${stand2struct_WARP%.hdr}
+	    invert_WARP=NO
+	    shift
+	    ;;
+	-wm)
+	    WM_orig="$2"
+	    WM_orig=${WM_orig%.gz}
+	    WM_orig=${WM_orig%.nii}
+	    WM_orig=${WM_orig%.img}
+	    WM_orig=${WM_orig%.hdr}
+	    extract_WM=NO
+	    shift
+	    ;;
+	-vent)
+	    VENT_orig="$2"
+	    VENT_orig=${VENT_orig%.gz}
+	    VENT_orig=${VENT_orig%.nii}
+	    VENT_orig=${VENT_orig%.img}
+	    VENT_orig=${VENT_orig%.hdr}
+	    extract_VENT=NO
+	    shift
+	    ;;
+	-noclean)
+	    clean=NO
+	    shift
+	    ;;
+	-h)
+	    echo "$HELP_OUT"
+	    exit 1
+	    ;;
+	*)
+	    echo "$HELP_OUT"
+	    exit 1
+	    ;;
+    esac
+    shift
+done
+
+# Invert structural to standard space warp file
+if [ $invert_WARP = YES ];
+then
+    stand2struct_WARP=${struct2stand_WARP}_inverted
+    invwarp --ref=${STRUCT} --warp=${struct2stand_WARP} --out=${stand2struct_WARP}
+fi
+
+# Segment structural file
+if ([ $extract_WM = YES ] && [ $mask_WM = YES ]) || ([ $extract_VENT = YES ] && [ $mask_VENT = YES ])
+then
+    fast -g --nopve -o ${STRUCT} ${STRUCT}
+fi
+
+# Set mask filenames if needed
+if [ $extract_WM = YES ]
+then
+    WM_orig=${STRUCT}_seg_2
+fi
+if [ $extract_VENT = YES ]
+then
+    VENT_orig=${STRUCT}_seg_0
+fi
+
+# Remove incorrectly identified voxels from white matter mask
+if [ $mask_WM = YES ]
+then
+    MNI_WM_warped=${MNI_WM_orig}_warp2struct
+    applywarp --ref=${STRUCT} --in=${MNI_WM_orig} --warp=${stand2struct_WARP} --interp=nn --out=${MNI_WM_warped}
+    WM_masked=${out_basename}_wm
+    fslmaths ${WM_orig} -mul ${MNI_WM_warped} ${WM_masked}
+fi
+
+# Remove incorrectly identified voxels from ventricular mask
+if [ $mask_VENT = YES ]
+then
+    MNI_VENT_warped=${MNI_VENT_orig}_warp2struct
+    applywarp --ref=${STRUCT} --in=${MNI_VENT_orig} --warp=${stand2struct_WARP} --interp=nn --out=${MNI_VENT_warped}
+    VENT_masked=${out_basename}_vent
+    fslmaths ${VENT_orig} -mul ${MNI_VENT_warped} ${VENT_masked}
+fi
+
+if [ $clean = YES ]
+then
+    if [ $invert_WARP = YES ];
+    then
+	rm ${stand2struct_WARP}*
+    fi
+    if ([ $extract_WM = YES ] && [ $mask_WM = YES ]) || ([ $extract_VENT = YES ] && [ $mask_VENT = YES ])
+    then
+	rm ${STRUCT}_seg*
+    fi
+    if [ $mask_WM = YES ]
+    then
+	rm ${MNI_WM_warped}*
+    fi
+    if [ $mask_VENT = YES ]
+    then
+	rm ${MNI_VENT_warped}*
+    fi
+fi

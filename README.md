@@ -186,11 +186,11 @@ Nodes represent discrete brain regions, often identified using anatomical or fun
 
 <p align="center">
 <!-- for compatibility with screen sizes -->
-<img src="img/atlas.jpg" alt="Description" style="max-width:100%; height:auto;> 
+<img src="img/atlas.jpg" alt="Description" style="max-width:100%    ; height:auto;> 
 </p>
 
 <p align="center">
-Figure 11: Two functional atlases were used for constructing the network, Gordon (333 nodes, Right) and Schaefer (300 nodes, Left)
+Figure 11: Two functional atlases were used for constructing the network, Gordon (333 nodes, Left) and Schaefer (300 nodes, Right)
 </p>
 
 - Defining connections (Functional connectivity)

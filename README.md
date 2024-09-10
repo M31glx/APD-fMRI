@@ -101,7 +101,7 @@ Figure 5: Demonstration of anatomical MRI data, T1-image (left) and fMRI data (r
 
 <p align="center">
 <!-- for compatibility with screen sizes -->
-<img src="img/13.png" alt="Description" width="400"> 
+<img src="img/13.png" alt="Description" width="600"> 
 </p>
 
 <p align="center">

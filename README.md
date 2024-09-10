@@ -184,7 +184,7 @@ Figure 7: Evaluating the accuracy of de-noising pipelines
 - Defining connections
 
 
-<iframe src="https://drive.google.com/file/d/14NACUdoEluWlH9MlV7kVdLmA5kXYApwP/view?usp=sharing" width="640" height="360" allow="autoplay"></iframe>
+<iframe src="https://drive.google.com/file/d/14NACUdoEluWlH9MlV7kVdLmA5kXYApwP/preview" width="640" height="360" allow="autoplay"></iframe>
 
 
 

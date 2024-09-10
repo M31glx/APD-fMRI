@@ -185,8 +185,8 @@ Figure 10: Evaluating the accuracy of de-noising pipelines
 Nodes represent discrete brain regions, often identified using anatomical or functional atlases. Here in this project two functional atlases (templates) were used and applied to each individuals data for defining nodes in the network.
 
 <p align="center">
-<!-- for compatibility with screen sizes -->
-<img src="img/atlas.jpg" alt="Description" style="max-width:100%    ; height:auto;> 
+  <img src="img/atlas1.jpg" alt="Image 1" width="300"/>
+  <img src="img/atlas2.png" alt="Image 2" width="500"/>
 </p>
 
 <p align="center">

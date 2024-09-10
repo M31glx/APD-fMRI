@@ -176,20 +176,25 @@ Figure 10: Evaluating the accuracy of de-noising pipelines
 
 ### Network Neuroscience (Graph Theory)
 
-Network neuroscience is an interdisciplinary field that studies the brain as a complex network of interconnected regions. The brain's functional organization can be modeled as a network, where nodes represent specific brain regions, and edges represent the connections between them. The goal is to understand how brain regions interact to give rise to cognition, behavior, and neural processes.
+- Network neuroscience is an interdisciplinary field that studies the brain as a complex network of interconnected regions. The brain's functional organization can be modeled as a network, where nodes represent specific brain regions, and edges represent the connections between them. The goal is to understand how brain regions interact to give rise to cognition, behavior, and neural processes.
+- Network neuroscience utilizes the graph theory which is a mathematical framework to study the properties and relationships of interconnected data points.
 
 ### Constructing Brain network
 
 - Defining Nodes
-
 Nodes represent discrete brain regions, often identified using anatomical or functional atlases. Here in this project two functional atlases (templates) were used and applied to each individuals data for defining nodes in the network.
 
+<p align="center">
+<!-- for compatibility with screen sizes -->
+<img src="img/atlas.jpg" alt="Description" width="500" height="600"> 
+</p>
 
+<p align="center">
+Figure 11: Two functional atlases were used for constructing the network, Gordon (333 nodes, Right) and Schaefer (300 nodes, Left)
+</p>
 
-
-- Defining connections
-Measures the temporal correlation between the activity of different brain regions during rest or tasks. Functional connectivity reveals how different parts of the brain communicate.
-
+- Defining connections (Functional connectivity)
+Connections in the network are defined based on the measurement of the temporal correlation between the activity of pairwise brain regions during rest. Functional connectivity reveals how different parts of the brain communicate.
 
 
 

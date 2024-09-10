@@ -90,12 +90,19 @@ In addition to functional data, a high-resolution structural MRI scan is often a
 Figure 5: Demonstration of anatomical MRI data, T1-image (left) and fMRI data (right)
 </p>
 
-##Raw fMRI Data (DICOM Files)
+## Raw fMRI Data (DICOM Files)
 - Format: The raw data from the MRI scanner is typically stored in Digital Imaging and Communications in Medicine (DICOM) format. Each DICOM file contains a 2D slice of the brain, along with metadata (e.g., patient information, acquisition parameters like slice thickness, and time of acquisition).
-- Slices and Volumes: The scanner acquires brain images in slices (2D planes) that are stacked together to form a 3D volume. A single fMRI acquisition consists of a series of 3D volumes captured over time, with each volume representing the brain at a particular time point.
-- Temporal Resolution: For functional scans, images are acquired in rapid succession (every 1-3 seconds, referred to as the repetition time or TR), producing a 4D dataset (3D volumes over time). The total number of volumes acquired depends on the length of the scan.
 
+- Slices and Volumes: The scanner acquires brain images in slices (2D planes) that are stacked together to form a 3D volume. A single fMRI acquisition consists of a series of 3D volumes captured over time (time series), producing a 4D dataset (3D volumes over time).
 
+<p align="center">
+<!-- for compatibility with screen sizes -->
+<img src="img/13.png" alt="Description" width="500" height="600"> 
+</p>
+
+<p align="center">
+Figure 6: Depiction of fMRI data (3D) and its time series in FSL software
+</p>
 
 In this project, range of different approaches were used to treat the data such as formatting 4D imaging dataset (DICOM --> NIFTI), re-arranging data structure into brain Imaging Data structure (BIDS), quality inspection for evaluating spurious data (MRIQC), evaluation of de-noising pipelines, modeling data based on the theory of graph as well as statistical analysis
 

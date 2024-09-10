@@ -1,5 +1,8 @@
-<link href="https://vjs.zencdn.net/7.11.4/video-js.css" rel="stylesheet" />
-<script src="https://vjs.zencdn.net/7.11.4/video.min.js"></script>
+<head>
+  <link href="https://vjs.zencdn.net/7.11.4/video-js.css" rel="stylesheet" />
+  <script src="https://vjs.zencdn.net/7.11.4/video.min.js"></script>
+</head>
+
 
 # Project: Functional MRI study of children diagnosed with APD
 

@@ -181,7 +181,7 @@ Figure 10: Evaluating the accuracy of de-noising pipelines
 
 ### Constructing Brain network
 
-- Defining Nodes
+#### Defining Nodes
 Nodes represent discrete brain regions, often identified using anatomical or functional atlases. Here in this project two functional atlases (templates) were used and applied to each individuals data for defining nodes in the network.
 
 <p align="center">
@@ -193,7 +193,7 @@ Nodes represent discrete brain regions, often identified using anatomical or fun
 Figure 11: Two functional atlases were used for constructing the network, Gordon (333 nodes, Left) and Schaefer (300 nodes, Right)
 </p>
 
-- Defining connections (Functional connectivity)
+#### Defining connections (Functional connectivity)
 Connections in the network are defined based on the measurement of the temporal correlation between the activity of pairwise brain regions during rest. Functional connectivity reveals how different parts of the brain communicate.
 
 

@@ -1,5 +1,5 @@
 
-# Project: Functional MRI study of children diagnosed with APD
+# A functional MRI study of APD
 
 ## Introduction
 This study explores brain network organization in children with Auditory Processing Disorder (APD) using resting-state fMRI data and graph theory approaches. Key findings include differences in brain hub architecture and functional connectivity between children with APD and healthy controls, particularly in regions related to auditory processing.

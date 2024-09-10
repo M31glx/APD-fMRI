@@ -183,7 +183,7 @@ Figure 7: Evaluating the accuracy of de-noising pipelines
 - Defining connections
 
 <video width="600" controls>
-  <source src="img/Network.avi" type="video/avi">
+  <source src="img/Network.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 

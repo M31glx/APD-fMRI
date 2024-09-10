@@ -179,7 +179,7 @@ Figure 10: Evaluating the accuracy of de-noising pipelines
 - Network neuroscience is an interdisciplinary field that studies the brain as a complex network of interconnected regions. The brain's functional organization can be modeled as a network, where nodes represent specific brain regions, and edges represent the connections between them. The goal is to understand how brain regions interact to give rise to cognition, behavior, and neural processes.
 - Network neuroscience utilizes the graph theory which is a mathematical framework to study the properties and relationships of interconnected data points.
 
-### Constructing Brain network
+### Constructing the brain network
 
 #### Defining Nodes
 Nodes represent discrete brain regions, often identified using anatomical or functional atlases. Here in this project two functional atlases (templates) were used and applied to each individuals data for defining nodes in the network.

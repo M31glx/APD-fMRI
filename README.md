@@ -182,10 +182,8 @@ Figure 7: Evaluating the accuracy of de-noising pipelines
 
 - Defining connections
 
-<video width="600" controls>
-  <source src="img/Network.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+![Video](img/Network.mp4)
+
 
 ## Processing the data (Application of graph theory algorithms)
 

@@ -208,9 +208,10 @@ Figure 12: Functional connectivity matrix constructed by Gordon atlas (333 nodes
 </p>
 
 
-## Evaluating the constructed network 
+## Evaluating the network 
+For evaluation of information flow across the network and within each element (brain region), range of topological tests were conducted. 
 
-### Global and local topology evaluation
+### Global topology evaluation
 
 ### Backbone consistency tests (Hub model)
 

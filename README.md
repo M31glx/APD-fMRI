@@ -79,6 +79,9 @@ This study contributes to the understanding of brain network alterations in APD,
 This study was funded by [Eisdell Moore Centre](https://www.emcentre.ac.nz/) and Faculty of Science's Research fund from [the University of Auckland](https://www.auckland.ac.nz/en.html).
 
 # Data science behind the study
+In this project, range of different approaches were used to treat the data such as formatting 4D imaging dataset (DICOM --> NIFTI), re-arranging data structure into brain Imaging Data structure (BIDS), quality inspection for evaluating spurious data (MRIQC), evaluation of de-noising pipelines, modeling data based on the theory of graph as well as statistical analysis.
+
+## fMRI data
 When acquiring functional MRI (fMRI) data from a scanner, the output includes a complex array of raw and processed data that captures both structural and functional aspects of the brain (Figure 4: Right).
 
 In addition to functional data, a high-resolution structural MRI scan is often acquired. This provides a detailed map of the brain’s anatomy, which is used for aligning and localizing functional data to specific brain regions (Figure 4: Left).
@@ -104,20 +107,24 @@ Figure 5: Demonstration of anatomical MRI data, T1-image (left) and fMRI data (r
 Figure 6: Depiction of fMRI data (3D) and its time series in FSL software
 </p>
 
-In this project, range of different approaches were used to treat the data such as formatting 4D imaging dataset (DICOM --> NIFTI), re-arranging data structure into brain Imaging Data structure (BIDS), quality inspection for evaluating spurious data (MRIQC), evaluation of de-noising pipelines, modeling data based on the theory of graph as well as statistical analysis
 
 ## Data Organization steps
 
+- NIfTI Format
+The raw ([DICOM](https://www.dicomstandard.org/about) files are often converted into a more standardized format, such as the Neuroimaging Informatics Technology Initiative (NIfTI) format. NIfTI files contain the 3D brain volumes (or 4D volumes with time) and are easier to work with for analysis.
+
+- Increasingly, fMRI data is stored and organized using the Brain Imaging Data Structure (BIDS) format, a standardized way of organizing raw, processed, and metadata associated with neuroimaging datasets. This standard makes sharing and analysis more consistent and reproducible.
+
 ### 1. Data conversion and restructuring
 
-Raw MRI images ([DICOM](https://www.dicomstandard.org/about) data) were first reformatted to readable brain imaging data (NIFTI) using [dcm2niix](https://github.com/rordenlab/dcm2niix) and then re-structured into BIDS data structure using [niix2bids (Python)](https://github.com/benoitberanger/niix2bids). 
+[DICOM](https://www.dicomstandard.org/about) images were first reformatted to NIFTI using [dcm2niix](https://github.com/rordenlab/dcm2niix) and then re-structured into BIDS data structure using [niix2bids (Python)](https://github.com/benoitberanger/niix2bids). 
 
 <p align="center">
   <img src="img/8.jpg" alt="Image 1" width="300"/>
   <img src="img/6.png" alt="Image 2" width="500"/>
 </p>
 
-Figure 4: Transforming DICOM images (Left) to NIFTI format (4D data point) according to BIDS structure (Right)
+Figure 7: Transforming DICOM images (Left) to NIFTI format (4D data point) according to BIDS structure (Right)
 
 ## Computer Vision
 ### 1. Data Quality (QC)

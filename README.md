@@ -79,6 +79,24 @@ This study contributes to the understanding of brain network alterations in APD,
 This study was funded by [Eisdell Moore Centre](https://www.emcentre.ac.nz/) and Faculty of Science's Research fund from [the University of Auckland](https://www.auckland.ac.nz/en.html).
 
 # Data science behind the study
+When acquiring functional MRI (fMRI) data from a scanner, the output includes a complex array of raw and processed data that captures both structural and functional aspects of the brain (Figure 4: Right).
+
+In addition to functional data, a high-resolution structural MRI scan is often acquired. This provides a detailed map of the brain’s anatomy, which is used for aligning and localizing functional data to specific brain regions (Figure 4: Left).
+<p align="center">
+<img src="img/12.jpg" alt="Description" style="max-width:100%; height:auto;"> 
+</p>
+
+<p align="center">
+Figure 5: Demonstration of anatomical MRI data, T1-image (left) and fMRI data (right)
+</p>
+
+##Raw fMRI Data (DICOM Files)
+- Format: The raw data from the MRI scanner is typically stored in Digital Imaging and Communications in Medicine (DICOM) format. Each DICOM file contains a 2D slice of the brain, along with metadata (e.g., patient information, acquisition parameters like slice thickness, and time of acquisition).
+- Slices and Volumes: The scanner acquires brain images in slices (2D planes) that are stacked together to form a 3D volume. A single fMRI acquisition consists of a series of 3D volumes captured over time, with each volume representing the brain at a particular time point.
+- Temporal Resolution: For functional scans, images are acquired in rapid succession (every 1-3 seconds, referred to as the repetition time or TR), producing a 4D dataset (3D volumes over time). The total number of volumes acquired depends on the length of the scan.
+
+
+
 In this project, range of different approaches were used to treat the data such as formatting 4D imaging dataset (DICOM --> NIFTI), re-arranging data structure into brain Imaging Data structure (BIDS), quality inspection for evaluating spurious data (MRIQC), evaluation of de-noising pipelines, modeling data based on the theory of graph as well as statistical analysis
 
 ## Data Organization steps
@@ -94,7 +112,8 @@ Raw MRI images ([DICOM](https://www.dicomstandard.org/about) data) were first re
 
 Figure 4: Transforming DICOM images (Left) to NIFTI format (4D data point) according to BIDS structure (Right)
 
-### 2. Data Quality (QC)
+## Computer Vision
+### 1. Data Quality (QC)
 In order to assess the quality of each data for pre-processing, first each NIFTI data was visualized and evaluated against their quality control (QC) parameters such as FD (a measurement of how much the head moves from one frame to the next), DIVARS (derivatives of FD), etc. as well as their [carpet plot](https://www.nature.com/articles/s41598-021-86402-z#:~:text=A%20%E2%80%9Ccarpet%20plot%E2%80%9D%20is%20a,of%20neuronal%20and%20physiological%20activity.) ( 2-dimensional plot of scaled fMRI voxel intensity values).
 
 This pipeline is written in Bash and utilizes the [MRIQC](https://github.com/nipreps/mriqc/tree/master) (Python tool) for data quality assessment.
@@ -109,10 +128,7 @@ Figure 5: Visualized NIFTI data according to its quality measures
 </p>
 
 
-
-## Computer vision
-
-### 1. Image pre-processing
+### 2. Image pre-processing
 
 After discarding data points that did not meet the QC requirement, the remained data were undergone sequences of cleaning procedure, for example, Image transformations, Head motion correction, Spatial Normalization and Spatial Smoothing. This procedure utilizes [fMRIPrep](https://fmriprep.org/en/stable/), neuroimaging standard pipeline for minimal image cleaning (Figure 6). 
 
@@ -127,7 +143,7 @@ Figure 6: Some of the image pre-processing steps
 
 
 
-### 2. Selection of optimal de-noising pipelines
+### 3. Selection of optimal de-noising pipelines
 
 After each data was minimally processed, each data point were gone through further cleaning procedure to remove motion and confound signals from fMRI signal ([BOLD signal](https://radiopaedia.org/articles/bold-imaging)). For this, multiple existing de-noising pipelines were tested against efficiency and efficacy indices for accuracy performance. For instance, Figure 7 highlights the highest score of ICA-AROMA+8Phs+4GSR (High QC-FC, Low QC-FC dependence) among the rest of popular de-noising pipelines for the project's fMRI dataset.
 

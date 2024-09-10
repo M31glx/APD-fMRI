@@ -194,7 +194,10 @@ Figure 11: Two functional atlases were used for constructing the network, Gordon
 </p>
 
 #### Defining connections (Functional connectivity)
-Connections in the network are defined based on the measurement of the temporal correlation between the activity of pairwise brain regions during rest. Functional connectivity reveals how different parts of the brain communicate.
+Connections in the network are defined based on the measurement of the temporal correlation between the activity of pairwise brain regions. Functional connectivity (FC) reveals how different parts of the brain communicate. Here in this project, Pearson correlation was used to estimate the FC between brain regions. Using [Scipy (pearsonr)](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.pearsonr.html)  and [Matlab (corrcoef)](https://www.mathworks.com/help/matlab/ref/corrcoef.html), the estimation of FC for each pair of regions was calculated. Results were saved in a connectivity matrix where each row represents the index of node (brain region) and the corresponding value represents FC. 
+
+
+#### Connectivity Matrix
 
 
 

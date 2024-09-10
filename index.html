@@ -3,11 +3,126 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My GitHub Pages Site</title>
+  <title>Functional MRI Study of APD</title>
+  <link href="https://vjs.zencdn.net/7.11.4/video-js.css" rel="stylesheet" />
+  <script src="https://vjs.zencdn.net/7.11.4/video.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    h1, h2, h3 {
+      color: #333;
+    }
+    p {
+      line-height: 1.6;
+    }
+    .center {
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-  <h1>Welcome to My GitHub Pages Site</h1>
-  <p>This is a simple HTML page hosted on GitHub Pages.</p>
-</body>
-</html>
+  <h1>Project: Functional MRI study of children diagnosed with APD</h1>
+
+  <h2>Introduction</h2>
+  <p>This study explores brain network organization in children with Auditory Processing Disorder (APD) using resting-state fMRI data and graph theory approaches. Key findings include differences in brain hub architecture and functional connectivity between children with APD and healthy controls, particularly in regions related to auditory processing.</p>
+
+  <h2>Background</h2>
+  <p><strong>Problem Statement:</strong> Auditory Processing Disorder (APD) leads to difficulties in understanding speech despite normal hearing. The origins of APD symptoms are debated, with limited knowledge on the role of altered brain network topology.</p>
+  <p><strong>Objectives:</strong> To investigate the functional brain network organization in children with APD and compare it with healthy controls using advanced neuroimaging techniques and network science approaches.</p>
+
+  <h2>Methods</h2>
+  <h3>Population for collecting multi-modal data</h3>
+  <p>66 children (57 included) aged 8-14 years old (28 with diagnosis of APD and 29 healthy controls).</p>
+
+  <h3>Data type</h3>
+  <p>Functional MRI (rs-fMRI) data acquired by multi-echo multi-band imaging sequences.</p>
+
+  <h3>Analysis Techniques</h3>
+  <p>Complex network analysis using graph theory, focusing on global and nodal network properties, and brain hub architecture.</p>
+
+  <div class="center">
+    <img src="img/1.jpg" alt="Description" style="max-width:100%; height:auto;">
+    <p>Figure 1: The pipeline used in this project for analyzing the imaging data.</p>
+  </div>
+
+  <h2>Results</h2>
+
+  <h3>Global Network Properties</h3>
+  <p>Both APD and control groups showed similar global network properties, but differences emerged in hub architecture.</p>
+
+  <div class="center">
+    <img src="img/2.jpg" alt="Image 1" width="500">
+    <img src="img/3.jpg" alt="Image 2" width="300">
+    <p>Figure 2: Similar brain hub architecture and <a href="https://en.wikipedia.org/wiki/Large-scale_brain_network">intrinsic network model</a> in both APD and HC (Left) as shown by their global network metrics (right).</p>
+  </div>
+
+  <h3>Key Findings</h3>
+  <p>Decreased participation coefficient in auditory cortical regions (<a href="https://www.sciencedirect.com/topics/neuroscience/superior-temporal-gyrus#:~:text=The%20superior%20temporal%20gyrus%20is,short%2Dterm%20auditory%20sensory%20memory.">bilateral superior temporal gyrus</a>) in children with APD, suggesting altered functional connectivity in specific brain networks.</p>
+  <p>Positive correlation between left <a href="https://www.sciencedirect.com/topics/neuroscience/parahippocampal-gyrus">parahippocampal gyrus</a> connectivity and auditory perception tasks in children with APD.</p>
+
+  <div class="center">
+    <img src="img/5.jpg" alt="Image 1" width="400" id="target-image1">
+    <img src="img/4.jpg" alt="Image 2" width="400" id="target-image2">
+    <p>Figure 3: Major differences in brain regional network in APD and HC based on network metrics.</p>
+  </div>
+
+  <h2>Discussion</h2>
+  <p>The findings suggest that children with APD have distinct alterations in brain network topology, particularly in regions associated with auditory processing. These results provide new insights into the neural mechanisms underlying APD and highlight the potential for using advanced neuroimaging and network science approaches to further our understanding of auditory processing disorders.</p>
+
+  <h2>Conclusion</h2>
+  <p>This study contributes to the understanding of brain network alterations in APD, with potential implications for developing targeted interventions.</p>
+
+  <h2>Publication and Citation</h2>
+  <p><strong>Read the article:</strong> <a href="https://www.sciencedirect.com/science/article/pii/S2213158222002042">here</a></p>
+  <p><strong>Citation:</strong> Alvand et al., (2022). Altered brain network topology in children with auditory processing disorder: A resting-state multi-echo fMRI study. <em>NeuroImage: Clinical, 35</em>, 103139.</p>
+
+  <h2>Funding</h2>
+  <p>This study was funded by <a href="https://www.emcentre.ac.nz/">Eisdell Moore Centre</a> and the Faculty of Science's Research fund from <a href="https://www.auckland.ac.nz/en.html">the University of Auckland</a>.</p>
+
+  <h2>Video Demonstration</h2>
+  <div class="center">
+    <iframe src="https://drive.google.com/file/d/1A2B3C4D5E6F7G8H9I/preview" width="640" height="480" allow="autoplay"></iframe>
+    <p>Figure 7: Video demonstrating the functional MRI analysis pipeline.</p>
+  </div>
+
+  <h2>Data science behind the study</h2>
+  <p>In this project, a range of different approaches were used to treat the data, such as formatting 4D imaging dataset (DICOM --> NIFTI), re-arranging data structure into brain Imaging Data structure (BIDS), quality inspection for evaluating spurious data (MRIQC), evaluation of de-noising pipelines, and modeling data based on the theory of graphs and statistical analysis.</p>
+
+  <h3>fMRI data</h3>
+  <p>When acquiring functional MRI (fMRI) data from a scanner, the output includes a complex array of raw and processed data that captures both structural and functional aspects of the brain.</p>
+
+  <div class="center">
+    <img src="img/12.jpg" alt="Description" style="max-width:100%; height:auto;">
+    <p>Figure 5: Demonstration of anatomical MRI data, T1-image (left) and fMRI data (right).</p>
+  </div>
+
+  <h3>Raw fMRI Data (DICOM Files)</h3>
+  <p>The raw data from the MRI scanner is typically stored in Digital Imaging and Communications in Medicine (DICOM) format. Each DICOM file contains a 2D slice of the brain, along with metadata (e.g., patient information, acquisition parameters like slice thickness, and time of acquisition).</p>
+
+  <div class="center">
+    <img src="img/13.png" alt="Description" style="width:auto; height:auto;">
+    <p>Figure 6: Depiction of fMRI data (3D) and its time series in FSL software.</p>
+  </div>
+
+  <h3>Data Organization steps</h3>
+  <p>NIfTI Format: The raw DICOM files are often converted into a more standardized format, such as the Neuroimaging Informatics Technology Initiative (NIfTI) format.</p>
+
+  <div class="center">
+    <img src="img/8.jpg" alt="Image 1" width="300">
+    <img src="img/6.png" alt="Image 2" width="500">
+    <p>Figure 7: Transforming DICOM images (Left) to NIFTI format (4D data point) according to BIDS structure (Right).</p>
+  </div>
+
+  <h3>Computer Vision</h3>
+  <p>Data Quality (QC): In order to assess the quality of each data point for pre-processing, the NIFTI data was visualized and evaluated against their quality control (QC) parameters.</p>
+
+  <div class="center">
+    <img src="img/9.png" alt="Description" style="max-width:100%; height:auto;">
+    <p>Figure 5: Visualized NIFTI data according to its quality measures.</p>
+  </div>
+
+  <h3>Image pre-processing</h3>
+  <p>After disc
 

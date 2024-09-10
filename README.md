@@ -183,26 +183,8 @@ Figure 7: Evaluating the accuracy of de-noising pipelines
 
 - Defining connections
 
-<!--
+
 ![Video](img/Network.mp4)
--->
-
-<!--
-<link href="https://vjs.zencdn.net/7.11.4/video-js.css" rel="stylesheet" />
-<script src="https://vjs.zencdn.net/7.11.4/video.min.js"></script>
-
-<video id="my-video" class="video-js" controls preload="auto" width="734" height="534" data-setup="{}">
-  <source src="img/Network.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
--->
-
-<video width="640" height="360" controls>
-  <source src="img/Network.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-
-
 
 
 

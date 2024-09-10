@@ -139,13 +139,13 @@ This pipeline is written in Bash and utilizes the [MRIQC](https://github.com/nip
 </p>
 
 <p align="center">
-Figure 5: Visualized NIFTI data according to its quality measures
+Figure 8: Visualized NIFTI data according to its quality measures
 </p>
 
 
 ### 2. Image pre-processing
 
-After discarding data points that did not meet the QC requirement, the remained data were undergone sequences of cleaning procedure, for example, image transformations, head motion correction, spatial normalization and spatial smoothing. This procedure utilizes [fMRIPrep](https://fmriprep.org/en/stable/), neuroimaging standard pipeline for minimal image cleaning (Figure 6). 
+After discarding data points that did not meet the QC requirement, the remained data were undergone sequences of cleaning procedure, for example, image transformations, head motion correction, spatial normalization and spatial smoothing. This procedure utilizes [fMRIPrep](https://fmriprep.org/en/stable/), neuroimaging standard pipeline for minimal image cleaning (Figure 9). 
 
 <p align="center">
 <!-- for compatibility with screen sizes -->
@@ -153,14 +153,14 @@ After discarding data points that did not meet the QC requirement, the remained 
 </p>
 
 <p align="center">
-Figure 6: Some of the fMRI image pre-processing steps
+Figure 9: Some of the fMRI image pre-processing steps
 </p>
 
 
 
 ### 3. Selection of optimal de-noising pipelines
 
-After each data was minimally processed, each data point were gone through further cleaning procedure to remove motion and confound signals from fMRI signal ([BOLD signal](https://radiopaedia.org/articles/bold-imaging)). For this, multiple existing de-noising pipelines were tested against efficiency and efficacy indices for accuracy performance. For instance, Figure 7 highlights the highest score of ICA-AROMA+8Phs+4GSR (High QC-FC, Low QC-FC dependence) among the rest of popular de-noising pipelines for the project's fMRI dataset.
+After each data was minimally processed, each data point were gone through further cleaning procedure to remove motion and confound signals from fMRI signal ([BOLD signal](https://radiopaedia.org/articles/bold-imaging)). For this, multiple existing de-noising pipelines were tested against efficiency and efficacy indices for accuracy performance. For instance, Figure 10 highlights the highest score of ICA-AROMA+8Phs+4GSR (High QC-FC, Low QC-FC dependence) among the rest of popular de-noising pipelines for the project's fMRI dataset.
 
 <p align="center">
 <!-- for compatibility with screen sizes -->
@@ -168,21 +168,27 @@ After each data was minimally processed, each data point were gone through furth
 </p>
 
 <p align="center">
-Figure 7: Evaluating the accuracy of de-noising pipelines 
+Figure 10: Evaluating the accuracy of de-noising pipelines 
 </p>
 
 
 ## Modeling the fMRI data 
 
-### Complex network analysis
+### Network Neuroscience (Graph Theory)
+
+Network neuroscience is an interdisciplinary field that studies the brain as a complex network of interconnected regions. The brain's functional organization can be modeled as a network, where nodes represent specific brain regions, and edges represent the connections between them. The goal is to understand how brain regions interact to give rise to cognition, behavior, and neural processes.
+
+### Constructing Brain network
+
+- Defining Nodes
+
+Nodes represent discrete brain regions, often identified using anatomical or functional atlases. Here in this project two functional atlases (templates) were used and applied to each individuals data for defining nodes in the network.
 
 
-### Constructing network model
 
-- Defining data points
 
 - Defining connections
-
+Measures the temporal correlation between the activity of different brain regions during rest or tasks. Functional connectivity reveals how different parts of the brain communicate.
 
 
 

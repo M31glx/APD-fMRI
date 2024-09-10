@@ -194,11 +194,13 @@ Figure 11: Two functional atlases were used for constructing the network, Gordon
 </p>
 
 #### Defining connections (Functional connectivity)
-Connections in the network are defined based on the measurement of the temporal correlation between the activity of pairwise brain regions. Functional connectivity (FC) reveals how different parts of the brain communicate. Here in this project, Pearson correlation was used to estimate the FC between brain regions. Using [Scipy (pearsonr)](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.pearsonr.html)  and [Matlab (corrcoef)](https://www.mathworks.com/help/matlab/ref/corrcoef.html), the estimation of FC for each pair of regions was calculated. Results were saved in a connectivity matrix where each row represents the index of node (brain region) and the corresponding value represents FC. 
+Connections in the network are defined based on the measurement of the temporal correlation between the activity of pairwise brain regions. Functional connectivity (FC) reveals how different parts of the brain communicate. 
+
+Here in this project, Pearson correlation was used to estimate the FC between brain regions. Using [Scipy (pearsonr)](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.pearsonr.html) and [Matlab (corrcoef)](https://www.mathworks.com/help/matlab/ref/corrcoef.html), the estimation of FC for each pair of regions was calculated. Results were saved in a connectivity matrix where each row represents the index of node (brain region) and the corresponding value represents FC. 
 
 <p align="center">
-  <img src="img/GFC.jpg" alt="Image 1" width="300"/>
-  <img src="img/SFC.jpg" alt="Image 2" width="300"/>
+  <img src="img/GFC.jpg" alt="Image 1" width="400"/>
+  <img src="img/SFC.jpg" alt="Image 2" width="400"/>
 </p>
 
 <p align="center">

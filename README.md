@@ -101,7 +101,7 @@ Figure 5: Demonstration of anatomical MRI data, T1-image (left) and fMRI data (r
 
 <p align="center">
 <!-- for compatibility with screen sizes -->
-<img src="img/13.png" alt="Description" style="width:auto; height:auto;"> 
+<img src="img/13.png" alt="Description" width="400"> 
 </p>
 
 <p align="center">
@@ -204,13 +204,12 @@ Here in this project, Pearson correlation was used to estimate the FC between br
 </p>
 
 <p align="center">
-Figure 12: Functional connectivity matrix constructed by Gordon atlas (Left) and Schaefer atlas (Right)
+Figure 12: Functional connectivity matrix constructed by Gordon atlas (333 nodes, Left) and Schaefer atlas (300 nodes, Right)
 </p>
 
 
 
-
-## Processing the data (Application of graph theory algorithms)
+## Evaluating the constructed network 
 
 ### Global and local topology evaluation
 

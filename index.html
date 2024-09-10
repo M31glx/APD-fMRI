@@ -115,14 +115,70 @@
     <p>Figure 7: Transforming DICOM images (Left) to NIFTI format (4D data point) according to BIDS structure (Right).</p>
   </div>
 
-  <h3>Computer Vision</h3>
-  <p>Data Quality (QC): In order to assess the quality of each data point for pre-processing, the NIFTI data was visualized and evaluated against their quality control (QC) parameters.</p>
+<h3>Computer Vision</h3>
 
-  <div class="center">
-    <img src="img/9.png" alt="Description" style="max-width:100%; height:auto;">
-    <p>Figure 5: Visualized NIFTI data according to its quality measures.</p>
-  </div>
+<h4>1. Data Quality (QC)</h4>
+<p>In order to assess the quality of each data for pre-processing, first each NIFTI data was visualized and evaluated against their quality control (QC) parameters such as FD (a measurement of how much the head moves from one frame to the next), DIVARS (derivatives of FD), etc., as well as their <a href="https://www.nature.com/articles/s41598-021-86402-z#:~:text=A%20%E2%80%9Ccarpet%20plot%E2%80%9D%20is%20a,of%20neuronal%20and%20physiological%20activity.">carpet plot</a> (2-dimensional plot of scaled fMRI voxel intensity values).</p>
 
-  <h3>Image pre-processing</h3>
-  <p>After disc
+<p>This pipeline is written in Bash and utilizes the <a href="https://github.com/nipreps/mriqc/tree/master">MRIQC</a> (Python tool) for data quality assessment.</p>
+
+<div class="center">
+  <img src="img/9.png" alt="Description" style="max-width:100%; height:auto;">
+  <p>Figure 5: Visualized NIFTI data according to its quality measures.</p>
+</div>
+
+<h4>2. Image pre-processing</h4>
+<p>After discarding data points that did not meet the QC requirement, the remaining data were processed using sequences of cleaning procedures such as image transformations, head motion correction, spatial normalization, and spatial smoothing. This procedure utilizes <a href="https://fmriprep.org/en/stable/">fMRIPrep</a>, the neuroimaging standard pipeline for minimal image cleaning.</p>
+
+<div class="center">
+  <img src="img/10.png" alt="Description" style="max-width:100%; height:auto;">
+  <p>Figure 6: Some of the fMRI image pre-processing steps.</p>
+</div>
+
+<h4>3. Selection of optimal de-noising pipelines</h4>
+<p>After minimal processing, each data point underwent further cleaning procedures to remove motion and confound signals from the fMRI signal (<a href="https://radiopaedia.org/articles/bold-imaging">BOLD signal</a>). Multiple existing de-noising pipelines were tested against efficiency and efficacy indices for accuracy performance. For example, Figure 7 highlights the highest score of ICA-AROMA+8Phs+4GSR (High QC-FC, Low QC-FC dependence) among the most popular de-noising pipelines for the project's fMRI dataset.</p>
+
+<div class="center">
+  <img src="img/11.jpg" alt="Description" width="500" height="600">
+  <p>Figure 7: Evaluating the accuracy of de-noising pipelines.</p>
+</div>
+
+<h2>Modeling the fMRI data</h2>
+
+<h3>Complex network analysis</h3>
+<p>Various complex network analysis methods were applied to the data to understand brain connectivity patterns, focusing on both global and local network properties.</p>
+
+<h3>Constructing network model</h3>
+<ul>
+  <li>Defining data points: Each region of interest (ROI) was represented as a node in the brain network.</li>
+  <li>Defining connections: Functional connectivity between ROIs was computed and represented as edges in the network.</li>
+</ul>
+
+<div class="center">
+  <iframe src="https://drive.google.com/file/d/14NACUdoEluWlH9MlV7kVdLmA5kXYApwP/preview" width="640" height="360" allow="autoplay"></iframe>
+  <p>Figure 8: Video demonstrating the functional MRI analysis pipeline.</p>
+</div>
+
+<h2>Processing the data (Application of graph theory algorithms)</h2>
+
+<h3>Global and local topology evaluation</h3>
+<p>Global and local network properties such as efficiency, clustering coefficient, and modularity were calculated to understand the brain’s network topology in children with APD.</p>
+
+<h3>Backbone consistency tests (Hub model)</h3>
+<p>Brain hubs, or highly connected regions, were identified and tested for consistency across subjects.</p>
+
+<h3>Connection consistency test</h3>
+<p>The stability and consistency of network connections were evaluated across APD and control groups.</p>
+
+<h2>Statistical evaluation</h2>
+
+<h3>Multivariate tests</h3>
+<p>Multivariate statistical analyses were performed to assess differences between APD and control groups in terms of global and local network properties.</p>
+
+<h3>Correlation tests</h3>
+<p>Correlation tests were applied to examine the relationships between network metrics and behavioral performance in auditory perception tasks.</p>
+
+</body>
+</html>
+
 

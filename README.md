@@ -1,3 +1,10 @@
+<head>
+
+<link href="https://vjs.zencdn.net/7.11.4/video-js.css" rel="stylesheet" />
+<script src="https://vjs.zencdn.net/7.11.4/video.min.js"></script>
+</head>
+
+
 # Project: Functional MRI study of children diagnosed with APD
 
 ## Introduction
@@ -186,8 +193,6 @@ Figure 7: Evaluating the accuracy of de-noising pipelines
 ![Video](img/Network.mp4)
 -->
 
-<link href="https://vjs.zencdn.net/7.11.4/video-js.css" rel="stylesheet" />
-<script src="https://vjs.zencdn.net/7.11.4/video.min.js"></script>
 
 <video id="my-video" class="video-js" controls preload="auto" width="640" height="360" data-setup="{}">
   <source src="img/Network.mp4" type="video/mp4" />

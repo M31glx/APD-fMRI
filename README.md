@@ -211,7 +211,10 @@ Figure 12: Functional connectivity matrix constructed by Gordon atlas (333 nodes
 ## Evaluating the network 
 For evaluation of information flow across the network and within each element (brain region), range of topological tests were conducted. 
 
-### Global topology evaluation
+### Global topology tests
+These tests assess the overall organization and efficiency of the network, such as: Characteristic Path Length (CPL), Global Efficiency (GL), Mean Local Efficiency (MLE), Clustering Coefficient (CC), Modularity and Small-Worldness
+
+### Network community test
 
 ### Backbone consistency tests (Hub model)
 
@@ -222,6 +225,8 @@ For evaluation of information flow across the network and within each element (b
 ### Multivariate tests
 
 ### Correlation tests
+
+## Visualization
 
 
 

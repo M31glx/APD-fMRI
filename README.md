@@ -15,7 +15,7 @@ This study explores brain network organization in children with Auditory Process
 - 66 children (57 included) aged 8-14 years old (28 with diagnosis of APD and 29 healthy controls).
 
 ### Data type
-- functional MRI (rs-fMRI) data acquired by multi-echo multi-band imaging sequences
+- functional MRI (fMRI) data acquired by multi-echo multi-band imaging sequences
 
 ### Analysis Techniques
 - Complex network analysis using graph theory, focusing on global and nodal network properties, and brain hub architecture
@@ -179,7 +179,7 @@ Figure 10: Evaluating the accuracy of de-noising pipelines
 - Network neuroscience is an interdisciplinary field that studies the brain as a complex network of interconnected regions. The brain's functional organization can be modeled as a network, where nodes represent specific brain regions, and edges represent the connections between them. The goal is to understand how brain regions interact to give rise to cognition, behavior, and neural processes.
 - Network neuroscience utilizes the graph theory which is a mathematical framework to study the properties and relationships of interconnected data points.
 
-### Constructing the brain network
+### Construction of the brain network
 
 #### Defining Nodes
 Nodes represent discrete brain regions, often identified using anatomical or functional atlases. Here in this project two functional atlases (templates) were used and applied to each individuals data for defining nodes in the network.
@@ -193,10 +193,10 @@ Nodes represent discrete brain regions, often identified using anatomical or fun
 Figure 11: Two functional atlases were used for constructing the network, Gordon (333 nodes, Left) and Schaefer (300 nodes, Right)
 </p>
 
-#### Defining connections (Functional connectivity)
-Connections in the network are defined based on the measurement of the temporal correlation between the activity of pairwise brain regions. Functional connectivity (FC) reveals how different parts of the brain communicate. 
+#### Defining connections
+Connections in the network are defined according to the statistical dependence of temporal correlation between the activity of pairwise brain regions. This connection is al so called Functional connectivity (FC), reveals how different parts of the brain communicate. 
 
-Here in this project, Pearson correlation was used to estimate the FC between brain regions. Using [Scipy (pearsonr)](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.pearsonr.html) and [Matlab (corrcoef)](https://www.mathworks.com/help/matlab/ref/corrcoef.html), the estimation of FC for each pair of regions was calculated. Results were saved in a connectivity matrix where each row represents the index of node (brain region) and the corresponding value represents FC. 
+Here in this project, Pearson correlation was used to estimate the FC between each pair of brain regions. Using [Scipy (pearsonr)](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.pearsonr.html) and [Matlab (corrcoef)](https://www.mathworks.com/help/matlab/ref/corrcoef.html), the estimation of FC for each pair of regions was calculated. Results were saved in a connectivity matrix where each row represents the index of node (brain region) and the corresponding value represents FC. 
 
 <p align="center">
   <img src="img/GFC.jpg" alt="Image 1" width="400"/>

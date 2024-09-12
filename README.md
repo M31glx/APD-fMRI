@@ -179,7 +179,7 @@ Figure 10: Evaluating the accuracy of de-noising pipelines
 - Network neuroscience utilizes the graph theory which is a mathematical framework to study the properties and relationships of interconnected data points.
 
 <p align="center">
-  <img src="img/mci.svg" alt="Image 1" width="400"/>
+  <img src="img/mci.svg" alt="Image 1" width="800"/>
 </p>
 
 <p align="center">

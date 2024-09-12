@@ -175,11 +175,11 @@ Figure 10: Evaluating the accuracy of de-noising pipelines
 
 ### Network Neuroscience (Graph Theory)
 
-- Network neuroscience is an interdisciplinary field that studies the brain as a complex network of interconnected regions. The brain's functional organization can be modeled as a network, where nodes represent specific brain regions, and edges represent the connections between them. The goal is to understand how brain regions interact to give rise to cognition, behavior, and neural processes.
-- Network neuroscience utilizes the graph theory which is a mathematical framework to study the properties and relationships of interconnected data points.
+- Network neuroscience is an interdisciplinary field that studies the brain as a complex network of interconnected regions. The brain's functional organization can be modeled as a network, where nodes represent specific brain regions, and edges represent the connections between them. The goal is to understand how brain regions interact to give rise to cognition, behavior, and neural processes
+- Network neuroscience utilizes the graph theory which is a mathematical framework to study the properties and relationships of interconnected data points
 
 <p align="center">
-  <img src="img/mci.svg" alt="Image 1" width="800"/>
+  <img src="img/mci.svg" alt="Image 1" width="900"/>
 </p>
 
 <p align="center">

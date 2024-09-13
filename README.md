@@ -183,7 +183,7 @@ Figure 10: Evaluating the accuracy of de-noising pipelines
 </p>
 
 <p align="center">
-Figure 11: Depiction of brain network (Left) and its associated regional connection in the diagram (Right)
+Figure 11: Depiction of brain network (Left) and its associated regional connection in the diagram (Right). Each ball represents a node (i.e., brain region) and each line represents a connection (i.e, FC)
 </p>
 
 ### Construction of the brain network

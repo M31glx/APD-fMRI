@@ -266,7 +266,7 @@ To test the consistency a network, two measures of WMZ and PC (PC normalized) we
 2. Participation coefficient (PC): This measure quantifies how a node’s connections are distributed across different modules. This measure reflects how a brain region interacts with multiple functional networks (i.e., modules), potentially serving as a connector hub (connecting two modules) or provincial hub (densely connected only within a module). 
 
 <p align="center">
-  <img src="img/hub.jpg" alt="Image 1" width="900"/>
+  <img src="img/hub.jpg" alt="Image 1" width="700"/>
 </p>
 
 <p align="center">

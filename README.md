@@ -276,7 +276,7 @@ Figure 16: Depiction of hub in a random graph (A). Brain hub organization in APD
 ### Connection consistency test
 
 <p align="center">
-  <img src="img/NBS.png" alt="Image 1" width="900"/>
+  <img src="img/NBS.jpg" alt="Image 1" width="900"/>
 </p>
 
 <p align="center">

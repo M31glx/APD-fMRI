@@ -259,9 +259,9 @@ Figure 15: Community detection steps in the brain network (A). Modular organizat
 
 To test the consistency a network, two measures of WMZ and PC (PC normalized) were used.
 
-1. Within module degree (WMZ): This metric refers to the number of connections (edges) that a node has with other nodes within the same module (or community). This measure helps to understand how well-connected a node is within its own community. In the brain network, it indicates how integrative a brain region is (i.e., hub) within a particular functional module.
+1. Within module degree (WMZ): This metric indicates how integrative a brain region is (i.e., hub) within a particular functional module.
 
-2. Participation coefficient (PC): This measure quantifies how a node’s connections are distributed across different modules. It measures the extent to which a node connects to nodes in different modules or communities. This measure reflects how a brain region interacts with multiple functional networks (i.e., modules), potentially serving as a connector hub (connecting two modules) or provincial hub (densely connected only within a module). 
+2. Participation coefficient (PC): This measure quantifies how a node’s connections are distributed across different modules. This measure reflects how a brain region interacts with multiple functional networks (i.e., modules), potentially serving as a connector hub (connecting two modules) or provincial hub (densely connected only within a module). 
 
 <p align="center">
   <img src="img/hub.jpg" alt="Image 1" width="900"/>

@@ -225,7 +225,7 @@ Here in this project, Pearson correlation was used to estimate the FC between ea
 </p>
 
 <p align="center">
-Figure 13: Functional connectivity matrix constructed by Gordon atlas (333 nodes, Left) and Schaefer atlas (300 nodes, Right)
+Figure 14: Functional connectivity matrix constructed by Gordon atlas (333 nodes, Left) and Schaefer atlas (300 nodes, Right)
 </p>
 
 
@@ -255,7 +255,7 @@ Local efficiency measures the efficiency of information transfer within the neig
 </p>
 
 <p align="center">
-Figure 14: Depiction of network's evaluation metrics
+Figure 15: Depiction of network's evaluation metrics
 </p>
 
 ### Local topology tests
@@ -268,7 +268,7 @@ Community detection is an evaluation method to identify modular organization in 
 </p>
 
 <p align="center">
-Figure 15: Community detection steps in the brain network (A). Modular organizations (Functional systems) that were revealed in the brain network of APD and HC (B).
+Figure 16: Community detection steps in the brain network (A). Modular organizations (Functional systems) that were revealed in the brain network of APD and HC (B).
 </p>
 
 #### Backbone consistency (Hub model)
@@ -284,7 +284,7 @@ To test the consistency a network, two measures of WMZ and PC (PC normalized) we
 </p>
 
 <p align="center">
-Figure 16: Depiction of hub in a random graph (A). Brain hub organization in APD and HC (B)
+Figure 17: Depiction of hub in a random graph (A). Brain hub organization in APD and HC (B)
 </p>
 
 ## Statistical evaluation
@@ -296,7 +296,7 @@ Figure 16: Depiction of hub in a random graph (A). Brain hub organization in APD
 </p>
 
 <p align="center">
-Figure 17: Depiction of NBS pipeline for connectivity test (A). Connection assessment implemented in the project (B)
+Figure 18: Depiction of NBS pipeline for connectivity test (A). Connection assessment implemented in the project (B)
 </p>
 
 

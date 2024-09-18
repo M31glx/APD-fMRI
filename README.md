@@ -244,9 +244,18 @@ Figure 14: Depiction of network's evaluation metrics
 
 ### Local topology tests
 
-#### Network community
+#### Network community detection
+Community detection is an evaluation method to identify modular organization in a network. Using Matlab, [Louvain algorithm](https://en.wikipedia.org/wiki/Louvain_method) were implemented in order to identify the functional systems (i.e., modules, networks, communities) in the brain networks. 
 
-#### Backbone consistency(Hub model)
+<p align="center">
+  <img src="img/community.jpg" alt="Image 1" width="900"/>
+</p>
+
+<p align="center">
+Figure 15: Community detection steps in the brain network (A). Modular organizations (Functional systems) that were revealed in the brain network of APD and HC (B).
+</p>
+
+#### Backbone consistency (Hub model)
 
 To test the consistency a network, two measures of WMZ and PC (PC normalized) were used.
 
@@ -259,7 +268,7 @@ To test the consistency a network, two measures of WMZ and PC (PC normalized) we
 </p>
 
 <p align="center">
-Figure 15: Construction of brain hub organization in APD (Left) and HC (Right)
+Figure 16: Construction of brain hub organization in APD (Left) and HC (Right)
 </p>
 
 ### Connection consistency test

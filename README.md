@@ -200,6 +200,20 @@ Nodes represent discrete brain regions, often identified using anatomical or fun
 Figure 12: Two functional atlases were used for constructing the network, Gordon (333 nodes, Left) and Schaefer (300 nodes, Right)
 </p>
 
+##### Consistency assessment between nodal parcellation methods
+This evaluation was conducted to assess if two random parcellation templates for defining network's nodes will indicate similar outcomes. For this, Test statistical map of brain regions in PC measure were calculated in Matlab and visualized using [BrainNet Viewer](https://uk.mathworks.com/matlabcentral/fileexchange/68881-brainnet-viewer). 
+
+<p align="center">
+  <img src="img/parcel.jpg" alt="Image 1" width="700"/>
+</p>
+
+
+<p align="center">
+Figure 13: Comparison between Gordon (Top) and Schaefer (Bottom) atlases. Colors represent statistical scores for each region and are coded based on their negative or positive values. Regions with smaller t values are coded as blue and regions with greater t values are colored yellow.
+</p>
+
+
+
 #### Defining connections
 Connections in the network are defined according to the statistical dependence of temporal correlation between the activity of pairwise brain regions. This connection is al so called Functional connectivity (FC), reveals how different parts of the brain communicate. 
 

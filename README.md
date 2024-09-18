@@ -242,10 +242,25 @@ A measure of how often a node acts as a bridge along the shortest path between o
 Figure 14: Depiction of network's evaluation metrics
 </p>
 
+### Local topology tests
 
-### Network community test
+#### Network community test
 
-### Backbone consistency tests (Hub model)
+#### Backbone consistency tests (Hub model)
+1. Within module degree (WMZ)
+
+within-module degree refers to the number of connections (edges) that a node has with other nodes within the same module (or community). This measure helps to understand how well-connected a node is within its own community. In the brain network, it indicates how integrative a brain region is (i.e., hub) within a particular functional module.
+
+2. Participation coefficient
+The participation coefficient quantifies how a node’s connections are distributed across different modules. It measures the extent to which a node connects to nodes in different modules or communities. This measure reflects how a brain region interacts with multiple functional networks (i.e., modules), potentially serving as a connector hub (connecting two modules) or provincial hub (densely connected only within a module). 
+
+<p align="center">
+  <img src="img/hub.jpg" alt="Image 1" width="900"/>
+</p>
+
+<p align="center">
+Figure 15: Construction of brain hub organization in APD (Left) and HC (Right)
+</p>
 
 ### Connection consistency test
 

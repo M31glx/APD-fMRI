@@ -268,7 +268,7 @@ To test the consistency a network, two measures of WMZ and PC (PC normalized) we
 </p>
 
 <p align="center">
-Figure 16: Construction of brain hub organization in APD (Left) and HC (Right)
+Figure 16: Depiction of hub in a random graph (A). Brain hub organization in APD and HC (B)
 </p>
 
 ### Connection consistency test

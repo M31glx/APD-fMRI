@@ -234,7 +234,13 @@ A measure of how interconnected a node's neighbors are. In a brain network, it i
 6. Betweenness Centrality:
 A measure of how often a node acts as a bridge along the shortest path between other nodes. High betweenness centrality means the region plays a crucial role in facilitating communication between different parts of the brain.
 
+<p align="center">
+  <img src="img/graph.jpg" alt="Image 1" width="900"/>
+</p>
 
+<p align="center">
+Figure 14: Depiction of network's evaluation metrics
+</p>
 
 
 ### Network community test

@@ -219,7 +219,23 @@ Figure 13: Functional connectivity matrix constructed by Gordon atlas (333 nodes
 For evaluation of information flow across the network and within each element (brain region), range of topological tests were conducted. 
 
 ### Global topology tests
-These tests assess the overall organization and efficiency of the network, such as: Characteristic Path Length (CPL), Global Efficiency (GL), Mean Local Efficiency (MLE), Clustering Coefficient (CC), Modularity and Small-Worldness
+These tests assess the overall organization and efficiency of the network, such as: Characteristic Path Length (CPL), Global Efficiency (GL), Mean Local Efficiency (MLE), Clustering Coefficient (CC), Modularity and Small-Worldness.
+
+1. Small-worldness:
+A network property indicating a balance between local clustering (specialized processing within regions) and short path lengths (efficient communication across the network). It suggests that the brain is both segregated and integrated.
+2. Global Efficiency:
+A measure of how efficiently information is exchanged across the entire network. It reflects the ability of distant regions to communicate with each other quickly and effectively.
+3. Modularity:
+The degree to which a network can be divided into modules or communities of nodes that are more densely connected to each other than to other nodes. In the brain, this can indicate specialized functional processing areas.
+4. Degree:
+The number of connections (edges) that a node (brain region) has with other nodes. In the brain, a higher degree means a region has more connections to other regions, playing a more central role in communication.
+5. Clustering Coefficient:
+A measure of how interconnected a node's neighbors are. In a brain network, it indicates how likely it is that the neighbors of a brain region are also connected to each other, forming a cluster.
+6. Betweenness Centrality:
+A measure of how often a node acts as a bridge along the shortest path between other nodes. High betweenness centrality means the region plays a crucial role in facilitating communication between different parts of the brain.
+
+
+
 
 ### Network community test
 

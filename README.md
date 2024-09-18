@@ -219,20 +219,22 @@ Figure 13: Functional connectivity matrix constructed by Gordon atlas (333 nodes
 For evaluation of information flow across the network and within each element (brain region), range of topological tests were conducted. 
 
 ### Global topology tests
-These tests assess the overall organization and efficiency of the network, such as: Characteristic Path Length (CPL), Global Efficiency (GL), Mean Local Efficiency (MLE), Clustering Coefficient (CC), Modularity and Small-Worldness.
+Global network topology tests assess the overall efficiency of the network integration and segregation in transmitting the information. Metrics used for these tests are: Characteristic Path Length (CPL), Global Efficiency (GL), Mean Local Efficiency (MLE), Clustering Coefficient (CC), Modularity and Small-Worldness.
 
-1. Small-worldness:
+1. Small-Worldness:
 A network property indicating a balance between local clustering (specialized processing within regions) and short path lengths (efficient communication across the network). It suggests that the brain is both segregated and integrated.
 2. Global Efficiency:
 A measure of how efficiently information is exchanged across the entire network. It reflects the ability of distant regions to communicate with each other quickly and effectively.
-3. Modularity:
+3. Characteristic Path Length (CPL):
+It measures how easily or quickly information can travel between different regions of the network.In brain networks, shorter path lengths often suggest more efficient communication between brain regions, while longer path lengths may indicate disruptions or inefficiencies.
+4. Modularity:
 The degree to which a network can be divided into modules or communities of nodes that are more densely connected to each other than to other nodes. In the brain, this can indicate specialized functional processing areas.
-4. Degree:
-The number of connections (edges) that a node (brain region) has with other nodes. In the brain, a higher degree means a region has more connections to other regions, playing a more central role in communication.
 5. Clustering Coefficient:
 A measure of how interconnected a node's neighbors are. In a brain network, it indicates how likely it is that the neighbors of a brain region are also connected to each other, forming a cluster.
-6. Betweenness Centrality:
-A measure of how often a node acts as a bridge along the shortest path between other nodes. High betweenness centrality means the region plays a crucial role in facilitating communication between different parts of the brain.
+6. Betweenness Centrality (BC):
+A measure of how often a node acts as a bridge along the shortest path between other nodes. High BC means the region plays a crucial role in facilitating communication between different parts of the brain.
+7. Mean Local Efficiency: 
+Local efficiency measures the efficiency of information transfer within the neighborhood of a node. Local efficiency reflects fault tolerance — how well a network can maintain communication if one node is disrupted.It measures segregated processing, how well information can flow between neighboring brain regions without relying on long-distance connections.
 
 <p align="center">
   <img src="img/graph.jpg" alt="Image 1" width="900"/>
@@ -272,6 +274,14 @@ Figure 16: Depiction of hub in a random graph (A). Brain hub organization in APD
 </p>
 
 ### Connection consistency test
+
+<p align="center">
+  <img src="img/NBS.PNG" alt="Image 1" width="900"/>
+</p>
+
+<p align="center">
+Figure 17: Brain network's connectivity assessment using NBS
+</p>
 
 ## Statistical evaluation
 

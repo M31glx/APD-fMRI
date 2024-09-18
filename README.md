@@ -273,17 +273,18 @@ To test the consistency a network, two measures of WMZ and PC (PC normalized) we
 Figure 16: Depiction of hub in a random graph (A). Brain hub organization in APD and HC (B)
 </p>
 
+## Statistical evaluation
+
 ### Connection consistency test
 
 <p align="center">
-  <img src="img/NBS.jpg" alt="Image 1" width="900"/>
+  <img src="img/NBS.jpg" alt="Image 1" width="700"/>
 </p>
 
 <p align="center">
-Figure 17: Brain network's connectivity assessment using NBS
+Figure 17: Depiction of NBS pipeline for connectivity test (A). Connection assessment implemented in the project (B)
 </p>
 
-## Statistical evaluation
 
 ### Multivariate tests
 

@@ -339,10 +339,10 @@ Figure 20: Depiction of general NBS pipeline for connectivity assessment (A) and
 General Linear Model (GLM) is a flexible statistical method used to model the relationship between one or more predictor variables and a response variable. In the context of neuroimaging and brain network studies, GLM is often used to analyze connectivity data, brain activity patterns, and their associations with clinical or cognitive measures.
 
 Formula: Y=Xβ+ϵ
-Y: The response variable (e.g., brain connectivity measures).
-X: The design matrix containing predictor variables (e.g., group membership, age).
-β: The coefficients representing the effect sizes of the predictors.
-ϵ: The error term.
+- Y: The response variable (e.g., brain connectivity measures).
+- X: The design matrix containing predictor variables (e.g., group membership, age).
+- β: The coefficients representing the effect sizes of the predictors.
+- ϵ: The error term.
 
 Applications in Brain Network Studies: 
 

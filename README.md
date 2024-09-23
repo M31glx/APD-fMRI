@@ -323,8 +323,7 @@ Figure 19: Depiction of hub in a random graph (A). Brain hub organization in APD
 
 [Network-Based Statistics (NBS)](https://sites.google.com/site/bctnet/network-based-statistic-toolbox) is a powerful statistical method used to identify differences in brain networks between groups (e.g., patients vs. controls) or conditions (e.g., pre- vs. post-treatment). NBS specifically tests for subnetworks (clusters of connected edges or nodes) that show statistically significant differences, rather than examining each connection independently.NBS is widely used to detect subnetworks that are altered in neurological and psychiatric disorders, such as schizophrenia, autism, Alzheimer's disease, and Auditory Processing Disorder (APD). 
 
-For this project, NBS were utilized to assess the alteration in functional connectivity within the brain network of APDs compared to HCs. This tool was implemented in a Matlab script and subsequently, Bash script was used for the [batch processing](https://en.wikipedia.org/wiki/Batch_processing).
-
+For this project, NBS were utilized to assess the alteration in functional connectivity within the brain network of APDs compared to HCs. I wrote a Matlab script for implementing the algorithm for each subject and also a Bash script to optimize the pipeline across all subjects' data [batch processing](https://en.wikipedia.org/wiki/Batch_processing).
 
 <p align="center">
   <img src="img/NBS.jpg" alt="Image 1" width="600"/>
@@ -336,6 +335,40 @@ Figure 20: Depiction of general NBS pipeline for connectivity assessment (A) and
 
 
 ### Multivariate tests
+
+General Linear Model (GLM) is a flexible statistical method used to model the relationship between one or more predictor variables and a response variable. In the context of neuroimaging and brain network studies, GLM is often used to analyze connectivity data, brain activity patterns, and their associations with clinical or cognitive measures.
+
+Formula: Y=Xβ+ϵ
+Y: The response variable (e.g., brain connectivity measures).
+X: The design matrix containing predictor variables (e.g., group membership, age).
+β: The coefficients representing the effect sizes of the predictors.
+ϵ: The error term.
+
+Applications in Brain Network Studies: 
+
+- Group Comparisons: GLM is used to compare brain connectivity metrics (e.g., clustering coefficient, path length) between groups, such as patients and healthy controls.
+- Co-variate Adjustments: It allows for adjustment of co-variates such as age, gender, or head motion, which might confound the results.
+- Correlation Analysis: GLM can model how brain connectivity relates to cognitive or clinical scores, providing insights into the relationship between brain function and behavior.
+Statistical Analysis Steps:
+
+Procedure: 
+1. Model Specification: Define the design matrix with variables of interest (e.g., group differences).
+2. Estimation: Estimate the coefficients (β) using the data.
+3. Hypothesis Testing: Perform statistical tests (e.g., t-tests, F-tests) on the coefficients to determine the significance of the predictors.
+4. Post-Hoc Analysis: after identifying significant effects, post-hoc analyses (e.g., Bonferroni correction) are used to control for multiple comparisons and refine the results.
+
+For this project, 
+
+
+
+
+<p align="center">
+  <img src="img/palm.png" alt="Image 1" width="600"/>
+</p>
+
+<p align="center">
+Figure 20: Depiction of statistical analysis implemented in this project
+</p>
 
 ### Correlation tests
 

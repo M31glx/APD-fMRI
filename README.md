@@ -363,7 +363,7 @@ For this project,
 
 
 <p align="center">
-  <img src="img/palm.png" alt="Image 1" width="600"/>
+  <img src="img/palm.png" alt="Image 1" width="900"/>
 </p>
 
 <p align="center">

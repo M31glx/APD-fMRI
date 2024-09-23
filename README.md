@@ -250,7 +250,7 @@ Figure 15: Depiction of network's pruning procedure
 For evaluation of information flow across the network and within each element (brain region), range of topological tests were conducted. 
 
 ### Global topology tests
-Global network topology tests assess the overall efficiency of the network integration and segregation in transmitting the information. Metrics used for these tests are: Characteristic Path Length (CPL), Global Efficiency (GL), Mean Local Efficiency (MLE), Clustering Coefficient (CC), Modularity and Small-Worldness.
+Global network topology tests assess the overall efficiency of the network integration and segregation in transmitting the information. For testing global topology of the brain network, I wrote a Matlab script to implement network metrics (See below for definition) for each subject's connectivity matrix. 
 
 <p align="center">
   <img src="img/graph.jpg" alt="Image 1" width="900"/>
@@ -276,11 +276,11 @@ A measure of how often a node acts as a bridge along the shortest path between o
 Local efficiency measures the efficiency of information transfer within the neighborhood of a node. Local efficiency reflects fault tolerance — how well a network can maintain communication if one node is disrupted.It measures segregated processing, how well information can flow between neighboring brain regions without relying on long-distance connections.
 
 
-
 ### Local topology tests
 
 #### Network community detection
-Community detection is an evaluation method to identify modular organization in a network. Using Matlab, [Louvain algorithm](https://en.wikipedia.org/wiki/Louvain_method) were implemented in order to identify the functional systems (i.e., modules, networks, communities) in the brain networks. 
+- Community detection is an evaluation method to identify modular organization in a network. Using Matlab, [Louvain algorithm](https://en.wikipedia.org/wiki/Louvain_method) were implemented in order to identify the functional systems (i.e., modules, networks, communities) in the brain networks. This process was repeated [1000 times](https://www.sciencedirect.com/science/article/abs/pii/B9780323852807000166) to achieve its highest accuracy for defining the network module.
+
 
 <p align="center">
   <img src="img/community.jpg" alt="Image 1" width="900"/>
@@ -288,6 +288,17 @@ Community detection is an evaluation method to identify modular organization in 
 
 <p align="center">
 Figure 17: Community detection steps in the brain network (A). Modular organizations (Functional systems) that were revealed in the brain network of APD and HC (B).
+</p>
+
+- Community consistency tests across different network's densities
+In order to assess whether the community (module) detection is consistent across all the density thresholds, I wrote a Matlab script to implement community algorithm across all densities (i.e., 1-40%) and all subjects for pairwise comparison.
+
+<p align="center">
+  <img src="img/com2.jpg" alt="Image 1" width="700"/>
+</p>
+
+<p align="center">
+Figure 18: Modular organization across network density thresholds for APD and HC subjects.
 </p>
 
 #### Backbone consistency test (Hub model)
@@ -303,7 +314,7 @@ To test the consistency a network, two measures of WMZ and PC (PC normalized) we
 </p>
 
 <p align="center">
-Figure 18: Depiction of hub in a random graph (A). Brain hub organization in APD and HC (B)
+Figure 19: Depiction of hub in a random graph (A). Brain hub organization in APD and HC (B)
 </p>
 
 ## Statistical evaluation
@@ -320,7 +331,7 @@ For this project, NBS were utilized to assess the alteration in functional conne
 </p>
 
 <p align="center">
-Figure 19: Depiction of general NBS pipeline for connectivity assessment (A) and the pipeline was implemented for this project (B).
+Figure 20: Depiction of general NBS pipeline for connectivity assessment (A) and the pipeline was implemented for this project (B).
 </p>
 
 

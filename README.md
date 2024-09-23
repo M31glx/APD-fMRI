@@ -237,8 +237,14 @@ Why Use Density Thresholding?
 - Remove Weak Connections: Filters out weak and potentially spurious connections that may arise from noise in the data.
 - Focus on Stronger Relationships: Highlights the most relevant and functionally significant connections within the brain, which are often most affected by neurological conditions.
 
-For this project, I computed connectivity matrices with a network density ranging from 1 to 40% (with a 1% increment). This means for a density threshold of 10%, only the top 10% of connections (based on their strength) are kept, and the remaining 80% are set to zero, effectively pruning the network.
+For this project, I computed connectivity matrices with a network density ranging from 1 to 40% (with a 1% increment). This means for a density threshold of 10%, only the top 10% of connections (based on their strength) are kept, and the remaining 80% are set to zero, effectively pruning the network. All the scripting were written in Matlab using network sparsity function.
+<p align="center">
+  <img src="img/thrs.png" alt="Image 1" width="700"/>
+</p>
 
+<p align="center">
+Figure 15: Depiction of network's pruning procedure
+</p>
 
 ## Evaluating the network 
 For evaluation of information flow across the network and within each element (brain region), range of topological tests were conducted. 
@@ -266,7 +272,7 @@ Local efficiency measures the efficiency of information transfer within the neig
 </p>
 
 <p align="center">
-Figure 15: Depiction of network's evaluation metrics and its application for the brain network modeling
+Figure 16: Depiction of network's evaluation metrics and its application for the brain network modeling
 </p>
 
 ### Local topology tests
@@ -279,7 +285,7 @@ Community detection is an evaluation method to identify modular organization in 
 </p>
 
 <p align="center">
-Figure 16: Community detection steps in the brain network (A). Modular organizations (Functional systems) that were revealed in the brain network of APD and HC (B).
+Figure 17: Community detection steps in the brain network (A). Modular organizations (Functional systems) that were revealed in the brain network of APD and HC (B).
 </p>
 
 #### Backbone consistency test (Hub model)
@@ -295,7 +301,7 @@ To test the consistency a network, two measures of WMZ and PC (PC normalized) we
 </p>
 
 <p align="center">
-Figure 17: Depiction of hub in a random graph (A). Brain hub organization in APD and HC (B)
+Figure 18: Depiction of hub in a random graph (A). Brain hub organization in APD and HC (B)
 </p>
 
 ## Statistical evaluation
@@ -312,7 +318,7 @@ For this project, NBS were utilized to assess the alteration in functional conne
 </p>
 
 <p align="center">
-Figure 18: Depiction of general NBS pipeline for connectivity assessment (A) and the pipeline was implemented for this project (B).
+Figure 19: Depiction of general NBS pipeline for connectivity assessment (A) and the pipeline was implemented for this project (B).
 </p>
 
 

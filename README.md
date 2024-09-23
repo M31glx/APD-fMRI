@@ -370,7 +370,7 @@ Figure 20: Depiction of statistical analysis implemented in this project as ment
 
 ### Correlation tests
 
-- [Partial Correlation](https://en.wikipedia.org/wiki/Partial_correlation): Measures the correlation between two variables while controlling for the effects of one or more additional variables.
+[Partial Correlation](https://en.wikipedia.org/wiki/Partial_correlation): Measures the correlation between two variables while controlling for the effects of one or more additional variables.
 Helps isolate the direct relationship between brain metrics and outcomes, accounting for confounding factors like age or gender.
 
 - Applications in Brain Network:
@@ -381,7 +381,7 @@ Helps isolate the direct relationship between brain metrics and outcomes, accoun
 1. Significance Testing: Correlation coefficients are tested for statistical significance to determine whether the observed relationships are unlikely to have occurred by chance.
 2. Effect Size: The strength of the correlation (e.g., weak, moderate, strong) provides information on how meaningful the association is.
 
- In this project, using Matlab functions, a partial correlation analysis was performed to assess the association between network measures and behavioral variables. Permutation was set to 20000 randomizations and the effect of age and group were controlled. All p values were corrected using FDR across ROIs and network measures to control for multiple comparisons. 
+- In this project, using Matlab functions, a partial correlation analysis was performed to assess the association between network measures and behavioral variables. Permutation was set to 20000 randomizations and the effect of age and group were controlled. All p values were corrected using FDR across ROIs and network measures to control for multiple comparisons. 
  
  <p align="center">
   <img src="img/lisns.jpg" alt="Image 1" width="600"/>

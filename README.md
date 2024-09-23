@@ -252,6 +252,14 @@ For evaluation of information flow across the network and within each element (b
 ### Global topology tests
 Global network topology tests assess the overall efficiency of the network integration and segregation in transmitting the information. Metrics used for these tests are: Characteristic Path Length (CPL), Global Efficiency (GL), Mean Local Efficiency (MLE), Clustering Coefficient (CC), Modularity and Small-Worldness.
 
+<p align="center">
+  <img src="img/graph.jpg" alt="Image 1" width="900"/>
+</p>
+
+<p align="center">
+Figure 16: Depiction of network's evaluation metrics and its application for the brain network modeling
+</p>
+
 1. Small-Worldness:
 A network property indicating a balance between local clustering (specialized processing within regions) and short path lengths (efficient communication across the network). It suggests that the brain is both segregated and integrated.
 2. Global Efficiency:
@@ -267,13 +275,7 @@ A measure of how often a node acts as a bridge along the shortest path between o
 7. Mean Local Efficiency: 
 Local efficiency measures the efficiency of information transfer within the neighborhood of a node. Local efficiency reflects fault tolerance — how well a network can maintain communication if one node is disrupted.It measures segregated processing, how well information can flow between neighboring brain regions without relying on long-distance connections.
 
-<p align="center">
-  <img src="img/graph.jpg" alt="Image 1" width="900"/>
-</p>
 
-<p align="center">
-Figure 16: Depiction of network's evaluation metrics and its application for the brain network modeling
-</p>
 
 ### Local topology tests
 

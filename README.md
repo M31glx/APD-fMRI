@@ -370,6 +370,17 @@ Figure 20: Depiction of statistical analysis implemented in this project as ment
 
 ### Correlation tests
 
+- Partial Correlation: Measures the correlation between two variables while controlling for the effects of one or more additional variables.
+Helps isolate the direct relationship between brain metrics and outcomes, accounting for confounding factors like age or gender.
+
+- Applications in Brain Network Studies:
+1. Identifying Biomarkers: Correlation analysis helps link brain connectivity patterns with symptoms or behavioral measures, identifying potential biomarkers of neurological or psychiatric conditions.
+2. Understanding Brain-Behavior Relationships: By examining how network alterations are associated with clinical measures, it helps to gain insights into the functional impact of connectivity changes.
+
+- Implication:
+1. Significance Testing: Correlation coefficients are tested for statistical significance to determine whether the observed relationships are unlikely to have occurred by chance.
+2. Effect Size: The strength of the correlation (e.g., weak, moderate, strong) provides information on how meaningful the association is.
+
 ## Visualization
 
 

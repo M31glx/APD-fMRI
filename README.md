@@ -1,7 +1,7 @@
 
 # A functional MRI study of APD
 
-## Project' summary
+## Project's summary
 ### Introduction
 This study explores brain network organization in children with Auditory Processing Disorder (APD) using resting-state fMRI data and graph theory approaches. Key findings include differences in brain hub architecture and functional connectivity between children with APD and healthy controls, particularly in regions related to auditory processing.
 
@@ -272,7 +272,7 @@ Community detection is an evaluation method to identify modular organization in 
 Figure 16: Community detection steps in the brain network (A). Modular organizations (Functional systems) that were revealed in the brain network of APD and HC (B).
 </p>
 
-#### Backbone consistency (Hub model)
+#### Backbone consistency test (Hub model)
 
 To test the consistency a network, two measures of WMZ and PC (PC normalized) were used.
 

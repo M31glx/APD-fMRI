@@ -357,17 +357,15 @@ Procedure:
 3. Hypothesis Testing: Perform statistical tests (e.g., t-tests, F-tests) on the coefficients to determine the significance of the predictors.
 4. Post-Hoc Analysis: after identifying significant effects, post-hoc analyses (e.g., Bonferroni correction) are used to control for multiple comparisons and refine the results.
 
-For this project, 
-
-
+For this project, all the statistical codes were written in Matlab and Bash by implementing [PALM toolbox](https://github.com/andersonwinkler/PALM), the area under the curve (AUC) across the sparsity range of 10-40% was calculated to assess whether there are group differences in network measures. Two-sample t-tests assuming unequal variances between APD and HC groups were carried out on the AUC of each network measure in the PALM. The randomization was repeated 20,000 times, and the 95% confidence interval was calculated and used as the critical value of significance testing (p < 0.05). The effect of age as a nuisance confound was also controlled during the randomization (demeaned). To control for multiple comparisons, all p values were corrected across ROIs and network measures (PALM: -corrmod, -fdr) using false discovery rate (FDR) correction (q < 0.05). 
 
 
 <p align="center">
-  <img src="img/palm.png" alt="Image 1" width="1200"/>
+  <img src="img/palm.png" alt="Image 1" width="900"/>
 </p>
 
 <p align="center">
-Figure 20: Depiction of statistical analysis implemented in this project
+Figure 20: Depiction of statistical analysis implemented in this project as mentioned above.
 </p>
 
 ### Correlation tests

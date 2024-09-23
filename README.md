@@ -384,7 +384,7 @@ Helps isolate the direct relationship between brain metrics and outcomes, accoun
  In this project, using Matlab functions, a partial correlation analysis was performed to assess the association between network measures and behavioral variables. Permutation was set to 20000 randomizations and the effect of age and group were controlled. All p values were corrected using FDR across ROIs and network measures to control for multiple comparisons. 
  
  <p align="center">
-  <img src="img/lisns.jpg" alt="Image 1" width="700"/>
+  <img src="img/lisns.jpg" alt="Image 1" width="600"/>
 </p>
 
 <p align="center">

@@ -256,7 +256,7 @@ Local efficiency measures the efficiency of information transfer within the neig
 </p>
 
 <p align="center">
-Figure 15: Depiction of network's evaluation metrics
+Figure 15: Depiction of network's evaluation metrics and its application for the brain network modeling
 </p>
 
 ### Local topology tests
@@ -292,12 +292,17 @@ Figure 17: Depiction of hub in a random graph (A). Brain hub organization in APD
 
 ### Connection consistency test
 
+[Network-Based Statistics (NBS)](https://sites.google.com/site/bctnet/network-based-statistic-toolbox) is a powerful statistical method used to identify differences in brain networks between groups (e.g., patients vs. controls) or conditions (e.g., pre- vs. post-treatment). NBS specifically tests for subnetworks (clusters of connected edges or nodes) that show statistically significant differences, rather than examining each connection independently.NBS is widely used to detect subnetworks that are altered in neurological and psychiatric disorders, such as schizophrenia, autism, Alzheimer's disease, and Auditory Processing Disorder (APD). 
+
+For this project, NBS were utilized to assess the alteration in functional connectivity within the brain network of APDs compared to HCs. This tool was implemented in a Matlab script and subsequently, Bash script was used for the [batch processing](https://en.wikipedia.org/wiki/Batch_processing).
+
+
 <p align="center">
-  <img src="img/NBS.jpg" alt="Image 1" width="700"/>
+  <img src="img/NBS.jpg" alt="Image 1" width="600"/>
 </p>
 
 <p align="center">
-Figure 18: Depiction of NBS pipeline for connectivity test (A). Connection assessment implemented in the project (B)
+Figure 18: Depiction of general NBS pipeline for connectivity assessment (A) and the pipeline was implemented for this project (B).
 </p>
 
 

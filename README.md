@@ -205,7 +205,7 @@ Figure 12: Two functional atlases were used for constructing the network, Gordon
 This evaluation was conducted to assess if two random parcellation templates for defining network's nodes will indicate similar outcomes. For this, Test statistical map of brain regions in PC measure were calculated in Matlab and visualized using [BrainNet Viewer](https://uk.mathworks.com/matlabcentral/fileexchange/68881-brainnet-viewer). 
 
 <p align="center">
-  <img src="img/parcel.jpg" alt="Image 1" width="700"/>
+  <img src="img/parcel.jpg" alt="Image 1" width="600"/>
 </p>
 
 
@@ -253,7 +253,7 @@ For evaluation of information flow across the network and within each element (b
 Global network topology tests assess the overall efficiency of the network integration and segregation in transmitting the information. For testing global topology of the brain network, I wrote a Matlab script to implement network metrics (See below for definition) for each subject's connectivity matrix. 
 
 <p align="center">
-  <img src="img/graph.jpg" alt="Image 1" width="900"/>
+  <img src="img/graph.jpg" alt="Image 1" width="800"/>
 </p>
 
 <p align="center">
@@ -283,7 +283,7 @@ Local efficiency measures the efficiency of information transfer within the neig
 
 
 <p align="center">
-  <img src="img/community.jpg" alt="Image 1" width="900"/>
+  <img src="img/community.jpg" alt="Image 1" width="700"/>
 </p>
 
 <p align="center">

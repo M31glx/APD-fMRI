@@ -229,6 +229,16 @@ Here in this project, Pearson correlation was used to estimate the FC between ea
 Figure 14: Functional connectivity matrix constructed by Gordon atlas (333 nodes, Left) and Schaefer atlas (300 nodes, Right)
 </p>
 
+#### Network's density assessment (Network's pruning):
+Density thresholding is a method used to control the number of connections (edges) in a brain network, ensuring that the network remains sparse and avoids including weak or noisy connections.
+
+Why Use Density Thresholding?
+- Control for Network Sparsity: Ensures that comparisons between subjects or groups are fair by keeping the number of connections consistent.
+- Remove Weak Connections: Filters out weak and potentially spurious connections that may arise from noise in the data.
+- Focus on Stronger Relationships: Highlights the most relevant and functionally significant connections within the brain, which are often most affected by neurological conditions.
+
+For this project, I computed connectivity matrices with a network density ranging from 1 to 40% (with a 1% increment). This means for a density threshold of 10%, only the top 10% of connections (based on their strength) are kept, and the remaining 80% are set to zero, effectively pruning the network.
+
 
 ## Evaluating the network 
 For evaluation of information flow across the network and within each element (brain region), range of topological tests were conducted. 

@@ -400,7 +400,7 @@ This technique combine data-driven approaches with meta-analysis techniques to i
 For conducting meta-analytical test, [Neurosynth python package](https://github.com/neurosynth/neurosynth) were used to understand how altered brain regions are associated with various psychological and neurological functions by synthesizing thousands of fMRI studies. 
 
 This pipeline includes:
-- reading altered brain regions in APD compared to HC that identified by network metrics (i.e., participation coefficient).
+- Reading altered brain regions in APD compared to HC that identified by network metrics (i.e., participation coefficient).
 - Extract Related Cognitive Terms to find cognitive terms associated with these brain regions (e.g., Superior Temporal Gyrus)
 - Analyze cognitive associations across two parcellation methods used in the study (i.e., Gordon and Schaefer parcellations)
 - Generate word clouds for the cognitive terms associated with each parcellation.

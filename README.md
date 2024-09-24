@@ -1,5 +1,5 @@
 
-# A functional MRI study of APD
+# Interactive brain systems in children with APD
 
 ## Project's summary
 ### Introduction
@@ -390,3 +390,5 @@ Helps isolate the direct relationship between brain metrics and outcomes, accoun
 <p align="center">
 Figure 21: Depiction of correlation analysis in the study 
 </p>
+
+

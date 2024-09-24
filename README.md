@@ -368,10 +368,9 @@ For this project, all the statistical codes were written in Matlab and Bash by i
 Figure 20: Depiction of statistical analysis implemented in this project as mentioned above.
 </p>
 
-### Correlation tests
+### Correlation test
 
-[Partial Correlation](https://en.wikipedia.org/wiki/Partial_correlation): Measures the correlation between two variables while controlling for the effects of one or more additional variables.
-Helps isolate the direct relationship between brain metrics and outcomes, accounting for confounding factors like age or gender.
+[Partial Correlation](https://en.wikipedia.org/wiki/Partial_correlation): Measures the correlation between two variables while controlling for the effects of one or more additional variables.Helps isolate the direct relationship between brain metrics and outcomes, accounting for confounding factors like age or gender.
 
 - Applications in Brain Network:
 1. Identifying Biomarkers: linking brain connectivity patterns with symptoms or behavioral measures, identifying potential biomarkers of neurological conditions.
@@ -391,4 +390,25 @@ Helps isolate the direct relationship between brain metrics and outcomes, accoun
 Figure 21: Depiction of correlation analysis in the study 
 </p>
 
+### Data-driven meta-analytical test
+This technique combine data-driven approaches with meta-analysis techniques to identify consistent patterns across multiple studies. Unlike traditional hypothesis-driven analyses, these tests do not rely on predefined hypotheses but instead explore data to uncover significant patterns.
 
+- Application:
+1. Exploring Brain-Behavior Relationships: Examine how brain activation relates to psychological terms across studies.
+2. Hypothesis Validation: Validate findings from individual studies against large-scale meta-analytical data.
+
+For conducting meta-analytical test, [Neurosynth python package](https://github.com/neurosynth/neurosynth) were used to understand how altered brain regions are associated with various psychological and neurological functions by synthesizing thousands of fMRI studies. 
+
+This pipeline includes:
+- reading altered brain regions in APD compared to HC that identified by network metrics (i.e., participation coefficient).
+- Extract Related Cognitive Terms to find cognitive terms associated with these brain regions (e.g., Superior Temporal Gyrus)
+- Analyze cognitive associations across two parcellation methods used in the study (i.e., Gordon and Schaefer parcellations)
+- Generate word clouds for the cognitive terms associated with each parcellation.
+
+ <p align="center">
+  <img src="img/wordcloud.jpg" alt="Image 1" width="600"/>
+</p>
+
+<p align="center">
+Figure 22: Visualizing brain regions and its cognitive terms based on two parcellations, Gordon (A), Schaefer (B)
+</p>

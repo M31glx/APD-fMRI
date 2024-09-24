@@ -176,8 +176,7 @@ Figure 10: Evaluating the accuracy of de-noising pipelines
 
 ### Network Neuroscience (Graph Theory)
 
-- Network neuroscience is an interdisciplinary field that studies the brain as a complex network of interconnected regions. The brain's functional organization can be modeled as a network, where nodes represent specific brain regions, and edges represent the connections between them. The goal is to understand how brain regions interact to give rise to cognition, behavior, and neural processes
-- Network neuroscience utilizes the graph theory which is a mathematical framework to study the properties and relationships of interconnected data points
+For modeling the data, I used complex network analysis (based on graph theory) to study brain networks because it provides powerful tools to quantify and model the complex relationships between different brain regions. The brain is an intricate, interconnected system, and graph theory offers a structured way to analyze these connections, helping us understand how the brain functions at both local and global levels.
 
 <p align="center">
   <img src="img/mci.svg" alt="Image 1" width="900"/>
@@ -187,10 +186,13 @@ Figure 10: Evaluating the accuracy of de-noising pipelines
 Figure 11: Depiction of brain network (Left) and its associated regional connection in the diagram (Right). Each ball represents a node (i.e., brain region) and each line represents a connection (i.e, FC)
 </p>
 
-### Construction of the brain network
+### Representation of the Brain as a Network:
+
+- The brain can be modeled as a network, where nodes represent brain regions (e.g., specific cortical areas) and edges represent the connections between them (based on correlations in activity).
+- Graph theory provides a natural framework for representing the brain’s architecture as a network, allowing us to explore functional relationships between regions.
 
 #### Defining Nodes
-Nodes represent discrete brain regions, often identified using anatomical or functional atlases. Here in this project two functional atlases (templates) were used and applied to each individuals data for defining nodes in the network.
+Nodes represent discrete brain regions, often identified using anatomical or functional atlases. Here in this project two functional atlases (templates) were used and applied to each individual's data for defining nodes in the network.
 
 <p align="center">
   <img src="img/atlas1.jpg" alt="Image 1" width="300"/>
@@ -202,7 +204,7 @@ Figure 12: Two functional atlases were used for constructing the network, Gordon
 </p>
 
 ##### Consistency assessment between nodal parcellation methods
-This evaluation was conducted to assess if two random parcellation templates for defining network's nodes will indicate similar outcomes. For this, Test statistical map of brain regions in PC measure were calculated in Matlab and visualized using [BrainNet Viewer](https://uk.mathworks.com/matlabcentral/fileexchange/68881-brainnet-viewer). 
+This evaluation was conducted to assess if two random parcellation methods for defining nodes will indicate similar outcomes. For this, Test statistical map of brain regions in PC measure were calculated in Matlab and visualized using [BrainNet Viewer](https://uk.mathworks.com/matlabcentral/fileexchange/68881-brainnet-viewer). 
 
 <p align="center">
   <img src="img/parcel.jpg" alt="Image 1" width="600"/>
@@ -216,7 +218,7 @@ Figure 13: Comparison between Gordon (Top) and Schaefer (Bottom) atlases. Colors
 
 
 #### Defining connections
-Connections in the network are defined according to the statistical dependence of temporal correlation between the activity of pairwise brain regions. This connection is al so called Functional connectivity (FC), reveals how different parts of the brain communicate. 
+Connections in the network are defined according to the statistical dependence of temporal correlation between the activity of pairwise brain regions. This connection is also called Functional connectivity (FC), reveals how different parts of the brain communicate. 
 
 Here in this project, Pearson correlation was used to estimate the FC between each pair of brain regions. Using [Scipy (pearsonr)](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.pearsonr.html) and [Matlab (corrcoef)](https://www.mathworks.com/help/matlab/ref/corrcoef.html), the estimation of FC for each pair of regions was calculated. Results were saved in a connectivity matrix where each row represents the index of node (brain region) and the corresponding value represents FC. 
 
@@ -238,6 +240,7 @@ Why Use Density Thresholding?
 - Focus on Stronger Relationships: Highlights the most relevant and functionally significant connections within the brain, which are often most affected by neurological conditions.
 
 For this project, I computed connectivity matrices with a network density ranging from 1 to 40% (with a 1% increment). This means for a density threshold of 10%, only the top 10% of connections (based on their strength) are kept, and the remaining 80% are set to zero, effectively pruning the network. All the scripting were written in Matlab using network sparsity function.
+
 <p align="center">
   <img src="img/thrs.png" alt="Image 1" width="700"/>
 </p>
@@ -249,8 +252,11 @@ Figure 15: Depiction of network's pruning procedure
 ## Evaluating the network 
 For evaluation of information flow across the network and within each element (brain region), range of topological tests were conducted. 
 
-### Global topology tests
-Global network topology tests assess the overall efficiency of the network integration and segregation in transmitting the information. For testing global topology of the brain network, I wrote a Matlab script to implement network metrics (See below for definition) for each subject's connectivity matrix. 
+### Evaluation of Global and Local Network Properties
+- Complex network analysis helps measure global properties, such as how efficiently information flows across the entire brain (e.g., global efficiency, characteristic path length), and local properties, such as how well information is processed within localized regions (e.g., [clustering coefficient](https://www.sciencedirect.com/topics/computer-science/clustering-coefficient), [Betweenness Centrality](https://www.sciencedirect.com/topics/computer-science/betweenness-centrality#:~:text=In%20subject%20area%3A%20Computer%20Science,their%20position%20in%20these%20paths.), [Modularity](https://en.wikipedia.org/wiki/Modularity_(networks), [local efficiency](https://en.wikipedia.org/wiki/Efficiency_(network_science)#:~:text=The%20concept%20of%20efficiency%20can,failure%20on%20a%20small%20scale.)).
+- This distinction between global and local properties allows us to explore both large-scale brain integration and localized processing (segregation) in a unified framework.
+
+For testing global topology of the brain network, I wrote a Matlab script to implement network metrics for each subject's connectivity matrix. 
 
 <p align="center">
   <img src="img/graph.jpg" alt="Image 1" width="800"/>
@@ -260,25 +266,12 @@ Global network topology tests assess the overall efficiency of the network integ
 Figure 16: Depiction of network's evaluation metrics and its application for the brain network modeling
 </p>
 
-1. Small-Worldness:
-A network property indicating a balance between local clustering (specialized processing within regions) and short path lengths (efficient communication across the network). It suggests that the brain is both segregated and integrated.
-2. Global Efficiency:
-A measure of how efficiently information is exchanged across the entire network. It reflects the ability of distant regions to communicate with each other quickly and effectively.
-3. Characteristic Path Length (CPL):
-It measures how easily or quickly information can travel between different regions of the network.In brain networks, shorter path lengths often suggest more efficient communication between brain regions, while longer path lengths may indicate disruptions or inefficiencies.
-4. Modularity:
-The degree to which a network can be divided into modules or communities of nodes that are more densely connected to each other than to other nodes. In the brain, this can indicate specialized functional processing areas.
-5. Clustering Coefficient:
-A measure of how interconnected a node's neighbors are. In a brain network, it indicates how likely it is that the neighbors of a brain region are also connected to each other, forming a cluster.
-6. Betweenness Centrality (BC):
-A measure of how often a node acts as a bridge along the shortest path between other nodes. High BC means the region plays a crucial role in facilitating communication between different parts of the brain.
-7. Mean Local Efficiency: 
-Local efficiency measures the efficiency of information transfer within the neighborhood of a node. Local efficiency reflects fault tolerance — how well a network can maintain communication if one node is disrupted.It measures segregated processing, how well information can flow between neighboring brain regions without relying on long-distance connections.
 
+### Quantifying Network Organization:
+- Graph theory metrics (such as degree, Participation Coefficient and modularity) offer ways to quantify the brain’s network organization, helping to identify key regions (hubs), communities (modules), and the overall efficiency of communication.
+- These metrics allow us to detect abnormalities in brain networks associated with neurological or psychiatric disorders (e.g., Alzheimer’s disease, schizophrenia, or Auditory Processing Disorder).
 
-### Local topology tests
-
-#### Network community detection
+#### Network community detection (Modularity)
 - Community detection is an evaluation method to identify modular organization in a network. Using Matlab, [Louvain algorithm](https://en.wikipedia.org/wiki/Louvain_method) were implemented in order to identify the functional systems (i.e., modules, networks, communities) in the brain networks. This process was repeated [1000 times](https://www.sciencedirect.com/science/article/abs/pii/B9780323852807000166) to achieve its highest accuracy for defining the network module.
 
 
@@ -301,9 +294,10 @@ In order to assess whether the community (module) detection is consistent across
 Figure 18: Modular organization across network density thresholds for APD and HC subjects.
 </p>
 
-#### Backbone consistency test (Hub model)
+#### Evaluation of network's Backbone (Hub model)
+Some brain regions, known as hubs, are highly connected and crucial for global information flow. Complex network analysis identifies these hubs and assesses their importance in brain function. Changes in hub structure or function are often linked to cognitive deficits or brain disorders, making it critical to identify these key nodes.
 
-To test the consistency a network, two measures of WMZ and PC (PC normalized) were used.
+- To test the consistency a network, two measures of WMZ and PC (PC normalized) were used.
 
 1. Within module degree (WMZ): This metric indicates how integrative a brain region is (i.e., hub) within a particular functional module.
 

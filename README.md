@@ -410,5 +410,5 @@ This pipeline includes:
 </p>
 
 <p align="center">
-Figure 22: Visualizing brain regions and its cognitive terms based on two parcellations, Gordon (A), Schaefer (B)
+Figure 22: Visualizing brain regions and its cognitive terms based on two atlases, Gordon (A), Schaefer (B)
 </p>

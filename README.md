@@ -334,7 +334,7 @@ Figure 20: Depiction of general NBS pipeline for connectivity assessment (A) and
 </p>
 
 
-### Multivariate tests
+### Multivariate tests (GLM)
 
 General Linear Model (GLM) is a flexible statistical method used to model the relationship between one or more predictor variables and a response variable. In the context of neuroimaging and brain network studies, GLM is often used to analyze connectivity data, brain activity patterns, and their associations with clinical or cognitive measures.
 
@@ -412,3 +412,5 @@ This pipeline includes:
 <p align="center">
 Figure 22: Visualizing brain regions and its cognitive terms based on two atlases, Gordon (A), Schaefer (B)
 </p>
+
+

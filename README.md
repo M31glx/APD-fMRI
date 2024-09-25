@@ -204,7 +204,7 @@ Nodes represent discrete brain regions, often identified using anatomical or fun
   <img src="img/atlas1.jpg" alt="Image 1" width="300"/>
   <img src="img/atlas2.jpg" alt="Image 2" width="308"/>
   -->
-    <img src="img/node.png" alt="Image 3" width="600"/>
+    <img src="img/node.png" alt="Image 3" width="900"/>
 </p>
 
 <p align="center">

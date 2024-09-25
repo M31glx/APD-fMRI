@@ -69,7 +69,7 @@ Figure 2: Similar brain hub architecture and <a href="https://en.wikipedia.org/w
   <img src="img/4.jpg" alt="Image 2" width="400" id="target-image2" />
 </p>
 
-Figure 3: Major differences in brain regional network in APD and HC based on network metrics.
+Figure 3: Major differences in brain regional network in APD and HC based on their network metrics.
 
 ### Discussion
 The findings suggest that children with APD have distinct alterations in brain network topology, particularly in regions associated with auditory processing. These results provide new insights into the neural mechanisms underlying APD and highlight the potential for using advanced neuroimaging and network science approaches to further our understanding of auditory processing disorders.

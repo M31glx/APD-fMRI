@@ -2,6 +2,11 @@
 # Interactive brain systems in children with APD
 
 ## Project's summary
+
+<p align="center">
+<img src="img/APD.jpg" alt="Description" width='700'/> 
+</p>
+
 ### Introduction
 This study explores brain network organization in children with Auditory Processing Disorder (APD) using resting-state fMRI data and graph theory approaches. Key findings include differences in brain hub architecture and functional connectivity between children with APD and healthy controls, particularly in regions related to auditory processing.
 

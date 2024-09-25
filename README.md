@@ -32,7 +32,7 @@ This study explores brain network organization in children with Auditory Process
 <!-- <img src="img/1.jpg" alt="Alt text" width="700" height="600"/> -->
 
 <!-- for compatibility with screen sizes -->
-<img src="img/1.jpg" alt="Description" width='700'/> 
+<img src="img/1.jpg" alt="Description" width='900'/> 
 </p>
 
 

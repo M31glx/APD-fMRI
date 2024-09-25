@@ -256,7 +256,7 @@ For evaluation of information flow across the network and within each element (b
 - Complex network analysis helps measure global properties, such as how efficiently information flows across the entire brain (e.g., global efficiency, characteristic path length), and local properties, such as how well information is processed within localized regions (e.g., [clustering coefficient](https://www.sciencedirect.com/topics/computer-science/clustering-coefficient), [Betweenness Centrality](https://www.sciencedirect.com/topics/computer-science/betweenness-centrality#:~:text=In%20subject%20area%3A%20Computer%20Science,their%20position%20in%20these%20paths.), [Modularity](https://en.wikipedia.org/wiki/Modularity_(networks)), [local efficiency](https://en.wikipedia.org/wiki/Efficiency_(network_science)#:~:text=The%20concept%20of%20efficiency%20can,failure%20on%20a%20small%20scale.)).
 - This distinction between global and local properties allows us to explore both large-scale brain integration and localized processing (segregation) in a unified framework.
 
-For testing global topology of the brain network, I wrote a Matlab script to implement network metrics for each subject's connectivity matrix. 
+For testing global and local properties of the brain network, Using Matlab and Python ([Networkx](https://networkx.org/documentation/stable/index.html)), I wrote scripts to implement network metrics for calculating subjects' connectivity matrices. 
 
 <p align="center">
   <img src="img/graph.jpg" alt="Image 1" width="800"/>

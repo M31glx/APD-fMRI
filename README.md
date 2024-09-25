@@ -208,7 +208,7 @@ Nodes represent discrete brain regions, often identified using anatomical or fun
 </p>
 
 <p align="center">
-Figure 12: Two functional atlases were used for constructing the network, Gordon (333 nodes, Left) and Schaefer (300 nodes, Right)
+Figure 12: Two functional atlases were used for constructing the network, Gordon (333 nodes, top row) and Schaefer (300 nodes, bottom row)
 </p>
 
 ##### Consistency assessment between nodal parcellation methods

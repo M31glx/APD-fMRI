@@ -250,7 +250,7 @@ Why Use Density Thresholding?
 For this project, I computed connectivity matrices with a network density ranging from 1 to 40% (with a 1% increment). This means for a density threshold of 10%, only the top 10% of connections (based on their strength) are kept, and the remaining 80% are set to zero, effectively pruning the network. All the scripting were written in Matlab using network sparsity function.
 
 <p align="center">
-  <img src="img/thrs.png" alt="Image 1" width="700"/>
+  <img src="img/thrs.png" alt="Image 1" width="900"/>
 </p>
 
 <p align="center">

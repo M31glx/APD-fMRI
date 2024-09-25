@@ -215,7 +215,7 @@ Figure 12: Two functional atlases were used for constructing the network, Gordon
 This evaluation was conducted to assess if two random parcellation methods for defining nodes will indicate similar outcomes. For this, Test statistical map of brain regions in PC measure were calculated in Matlab and visualized using [BrainNet Viewer](https://uk.mathworks.com/matlabcentral/fileexchange/68881-brainnet-viewer). 
 
 <p align="center">
-  <img src="img/parcel.jpg" alt="Image 1" width="600"/>
+  <img src="img/parcel.jpg" alt="Image 1" width="900"/>
 </p>
 
 

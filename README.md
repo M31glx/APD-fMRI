@@ -200,8 +200,10 @@ Figure 11: Depiction of brain network (Left) and its associated regional connect
 Nodes represent discrete brain regions, often identified using anatomical or functional atlases. Here in this project two functional atlases (templates) were used and applied to each individual's data for defining nodes in the network.
 
 <p align="center">
+<!--
   <img src="img/atlas1.jpg" alt="Image 1" width="300"/>
   <img src="img/atlas2.jpg" alt="Image 2" width="308"/>
+  -->
     <img src="img/node.png" alt="Image 3" width="600"/>
 </p>
 

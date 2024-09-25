@@ -272,7 +272,7 @@ Figure 16: Depiction of network's evaluation metrics and its application for the
 - These metrics allow us to detect abnormalities in brain networks associated with neurological or psychiatric disorders (e.g., Alzheimer’s disease, schizophrenia, or Auditory Processing Disorder).
 
 #### Network community detection (Modularity)
-- Community detection is an evaluation method to identify modular organization in a network. Using Matlab, [Louvain algorithm](https://en.wikipedia.org/wiki/Louvain_method) were implemented in order to identify the functional systems (i.e., modules, networks, communities) in the brain networks. This process was repeated [1000 times](https://www.sciencedirect.com/science/article/abs/pii/B9780323852807000166) to achieve its highest accuracy for defining the network module.
+- Community detection is an evaluation method to identify modular organization in a network. Using Matlab, [Louvain algorithm](https://en.wikipedia.org/wiki/Louvain_method) were implemented in order to identify the functional systems (i.e., modules, networks, communities) in the brain networks. This process was repeated [1000 times](https://www.sciencedirect.com/science/article/abs/pii/B9780323852807000166) to achieve its highest accuracy for defining the network's modules.
 
 
 <p align="center">

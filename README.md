@@ -291,8 +291,7 @@ Figure 16: Depiction of network's evaluation metrics and its application for the
 Figure 17: Community detection steps in the brain network (A). Modular organizations (Functional systems) that were revealed in the brain network of APD and HC (B).
 </p>
 
-- Community consistency tests across different network's densities:
-In order to assess whether the community (module) detection is consistent across all the density thresholds, I wrote a Matlab script to implement community algorithm across all densities (i.e., 1-40%) and all subjects for pairwise comparison.
+- To test the community consistency across all network's density thresholds, I utilized Matlab to implement community algorithm across all densities (i.e., 1-40%) and I developed a Bash script to perform the procedure across all subjects network data.
 
 <p align="center">
   <img src="img/com2.jpg" alt="Image 1" width="700"/>

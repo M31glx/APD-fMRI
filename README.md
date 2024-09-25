@@ -1,5 +1,5 @@
 
-# Interactive brain systems in children with APD
+# Analysis of brain networks in children with APD
 
 ## Project's summary
 

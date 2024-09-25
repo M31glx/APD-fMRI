@@ -4,7 +4,7 @@
 ## Project's summary
 
 <p align="center">
-<img src="img/APD.jpg" alt="Description" width='700'/> 
+<img src="img/APD.jpg" alt="Description" width='900'/> 
 </p>
 
 ### Introduction

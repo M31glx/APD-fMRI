@@ -77,7 +77,7 @@ The findings suggest that children with APD have distinct alterations in brain n
 This study contributes to the understanding of brain network alterations in APD, with potential implications for developing targeted interventions.
 
 ### Publication and Citation
-**Read the article:** [here](https://www.sciencedirect.com/science/article/pii/S2213158222002042)
+**Read the article:** [Altered brain network topology in children with auditory processing disorder: A resting-state multi-echo fMRI study. Neuroimage: Clinical (IF:](https://www.sciencedirect.com/science/article/pii/S2213158222002042)
 
 **Citation:** Alvand et al., (2022). Altered brain network topology in children with auditory processing disorder: A resting-state multi-echo fMRI study. *NeuroImage: Clinical, 35*, 103139.
 
